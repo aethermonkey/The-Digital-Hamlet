@@ -1,10 +1,52 @@
 class Agent:
-    """Abstract parent class for all agents"""
-    def __init__(self, name, agent_id, location): 
-        self.name = name  
-        self.agent_id = agent_id 
-        self.location = location 
-        self.traits = {} # Dict of character traits and levels 
+    def __init__(self, name, email, traits, address, clearance_level):
+        self.name = name
+        self.email = email
+        self.traits = traits 
+        self.address = address
+        self.clearance_level = clearance_level
+        self.location = None
+        self.checkin_time = None
+        self.checkout_time = None
+        self.intended_destination = None
+        
+    def check_in(self, location):
+        self.location = location
+        self.checkin_time = datetime.now()
+        
+    def check_out(self, intended_destination):
+        self.checkout_time = datetime.now()
+        self.intended_destination = intended_destination  
+        
+    def access_allowed(self, requested_clearance_level):
+        if self.clearance_level >= requested_clearance_level:
+            access_granted = True
+        else:
+            access_granted = False
+        return access_granted
+    
+    def communicate(self, recipient, message):
+        # Method to send message to another agent (by email or ID)
+        ... 
+        
+    def get_location(self):
+        return self.location
+    
+    def set_location(self, new_location):
+        self.location = new_location
+        
+    def learn(self, new_knowledge):
+        # Method to take in new knowledge and update the agent's knowledge base
+        ... 
+        
+    def report(self): 
+        # Generate report on agent's activity, alerts, recommendations based on role
+        ...  
+        
+    def move(self, new_location):
+        self.check_out(new_location)
+        self.set_location(new_location)
+        self.check_in(new_location)
 
 class ResidentAgent(Agent):
     """Generic resident agent within the hamlet"""
