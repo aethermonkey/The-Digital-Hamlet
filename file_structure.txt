@@ -1,0 +1,61 @@
+.
+├── LICENSE
+├── README.md
+├── config
+│   ├── __init__.py
+│   ├── agent_priviledges.py
+│   ├── econony_config.py
+│   ├── geography_config.py
+│   ├── simulation_config.py
+│   └── traits.py
+├── file_structure.txt
+├── main.py
+├── requirements.txt
+├── src
+│   ├── hamlet
+│   │   ├── __init__.py
+│   │   ├── agents
+│   │   │   ├── __init__.py
+│   │   │   └── agents.py
+│   │   ├── governance
+│   │   │   ├── economy
+│   │   │   │   ├── reserve_bank.py
+│   │   │   │   └── treasury.py
+│   │   │   ├── treasury
+│   │   │   └── veritassuprema
+│   │   │       ├── __init__.py
+│   │   │       ├── constitution.py
+│   │   │       └── judiciary.py
+│   │   ├── hamlet.py
+│   │   ├── services
+│   │   │   ├── __init__.py
+│   │   │   ├── bank.py
+│   │   │   ├── chronicle.py
+│   │   │   ├── development.py
+│   │   │   ├── library.py
+│   │   │   ├── maintenance.py
+│   │   │   ├── residententerprise
+│   │   │   │   └── enterprise.py
+│   │   │   └── services.py
+│   │   ├── towncenter
+│   │   │   ├── __init__.py
+│   │   │   └── towncenter.py
+│   │   └── users
+│   │       ├── sovereign.py
+│   │       └── users.py
+│   ├── interfaces
+│   │   ├── ar.py
+│   │   ├── cli.py
+│   │   ├── discordbot.py
+│   │   ├── slackbot.py
+│   │   ├── vr.py
+│   │   └── web.py
+│   └── knowledge
+│       ├── hamletknowledge.py
+│       └── userknowledge.py
+└── users
+    └── cplan
+        ├── user_prefs.py
+        └── user_vectors.py
+
+15 directories, 43 files
