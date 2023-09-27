@@ -1,0 +1,43 @@
+# filename: virtual_city.txt
+
+def create_city(rows, cols):
+    city = [['-' for _ in range(cols)] for __ in range(rows)]
+    return city
+
+def add_building(city, row, col):
+    if row < len(city) and col < len(city[0]):
+        city[row][col] = 'X'
+    else:
+        print("Invalid position. Try again.")
+    return city
+
+def print_city(city):
+    for row in city:
+        print(' '.join(row))
+
+# User interfacing part
+print("Welcome to the virtual city planner!")
+
+rows = int(input("Enter the number of rows in the city: "))
+cols = int(input("Enter the number of columns in the city: "))
+
+city = create_city(rows, cols)
+
+while True:
+    print_city(city)
+    
+    print("Enter the location of a new building (or 'q' to quit):")
+    row = input("Row: ")
+    
+    if row.lower() == 'q':
+        break
+        
+    col = input("Column: ")
+    
+    if col.lower() == 'q':
+        break
+    
+    city = add_building(city, int(row), int(col))
+
+print("\nHere's your final city plan:")
+print_city(city)
