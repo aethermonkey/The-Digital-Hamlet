@@ -29,11 +29,14 @@ config_list = [
         'temperature': 0.9,
     }
 ]
-with open("src/architect/test_bench/spec.txt", "r") as f:
-    specs = f.read()
+with open("src/architect/architect_init.prompt", "r") as f:
+    architect_init = f.read()
+
+with open ("src/architect/data_store/context.txt", "r") as f:
+    context = f.read()
 
 assistant = AssistantAgent(
-    system_message="You are a helpful software engineer. Project: " + specs,
+    system_message= architect_init + "\n And for context, here is a summary of our last conversation, care of Anthropics Claude! \n" + context,
     name="The Architect",
     llm_config=config_list,
 )
@@ -44,7 +47,7 @@ user_proxy = UserProxyAgent(
     max_consecutive_auto_reply=10,
     is_termination_msg=lambda x: x.get("content", "").rstrip().endswith("TERMINATE"),
     code_execution_config={
-        "work_dir": "src/architect/test_bench",    
+        "work_dir": "~/dev/The-Digital-Hamlet",    
         "use_docker": False,  # set to True or image name like "python:3" to use docker
     },
 )
