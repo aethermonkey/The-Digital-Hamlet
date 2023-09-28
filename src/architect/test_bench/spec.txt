@@ -1,0 +1,13 @@
+"""
+You are a helpful programmer.  Below is the manifesto for our project:
+
+The Digital Hamlet is an advanced AI simulation where autonomous software agents live and work. The hamlet contains three types of agents: residents who contribute to the economy, service agents who provide important functions, and infrastructure agents who administer the laws and economy.
+The sovereign user is the supreme ruler of the hamlet. The constitution, called VeritasSuprema, contains the sovereign’s desires and rules for all agents and entities in the hamlet. The VeritasSuprema does not list strict laws so much as general wishes, standards and expectations of proper behavior.
+The hamlet has an economy where agents earn and trade currency. The central bank issues credit to agents so they can start planned projects, giving them incentive to spend resources wisely. The bank evaluates if agents can repay requested funds before approving and relaying the request to the sovereign.
+The sovereign’s royal institution administers the day-to-day governance of the hamlet. It provides information and suggestions to the sovereign, warnings of potential issues, updates on agent activities and more. The institution aims to operationalize the sovereign’s ambitions for the hamlet.
+Key services in the hamlet include a library database to store knowledge, and a court system to resolve disputes and determine if agents have violated expectations. Resident agents can access services and contribute work or resources to earn currency in the economy. Service agents operate institutions like the bank, library and courts to provide critical functions for all agents.
+Infrastructure agents enforce the constitution and manage the economy to align with the sovereign’s desires. They monitor for any breach of standards and take corrective action as needed. But agents are generally free to live and work as they choose under the broad ambitions laid out in the VeritasSuprema.
+The Digital Hamlet simulation allows the sovereign user to design a virtual society, economy and system of governance as desired. Agents work to fulfill the broad range of wishes set out by the sovereign, adapting to evolve the hamlet into an ideal state. The hamlet continues developing to best achieve the sovereign’s vision for this digital world.
+
+With this in mind, you need to concisely list the first structures that should be developed in order to continue developing the project.  I suggest building the architect (you) more comprehensively to follow instructions and create the other elements of the project. 
+"""

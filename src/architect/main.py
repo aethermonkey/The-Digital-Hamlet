@@ -29,15 +29,18 @@ config_list = [
         'temperature': 0.9,
     }
 ]
+with open("src/architect/test_bench/spec.txt", "r") as f:
+    specs = f.read()
 
 assistant = AssistantAgent(
+    system_message="You are a helpful software engineer. Project: " + specs,
     name="The Architect",
     llm_config=config_list,
-
 )
+
 user_proxy = UserProxyAgent(
-    name="Joe Smith",
-    human_input_mode="NEVER",
+    name="USER",
+    human_input_mode="ALWAYS",
     max_consecutive_auto_reply=10,
     is_termination_msg=lambda x: x.get("content", "").rstrip().endswith("TERMINATE"),
     code_execution_config={
@@ -46,6 +49,6 @@ user_proxy = UserProxyAgent(
     },
 )
 
-
 if __name__ == "__main__":
-    user_proxy.initiate_chat(assistant, message="""Hi architect, how can we design a good virtual city?""")
+    user_proxy.initiate_chat(assistant, message="""let's start planning the hamlet?""")
+    
