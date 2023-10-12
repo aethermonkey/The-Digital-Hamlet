@@ -1,15 +1,19 @@
 {
-    "prop":[
+    "autogen_docs":[
         "autogen documentation",
         "https://microsoft.github.io/autogen/docs/reference/agentchat/conversable_agent"
     ],
-    "prop": [
+    "path_root": [
         "Root directory of project",
         "/home/cplan/dev/The-Digital-Hamlet"
     ],
-    "prop": [
+    "path_architect": [
         "Working directory to create the architect team",
         "/home/cplan/dev/The-Digital-Hamlet/src/architect"
+    ],
+    "path_data_store": [
+        "Extra information about the system",
+        "/home/cplan/dev/The-Digital-Hamlet/src/architect/data_store/"
     ]
 }
 
