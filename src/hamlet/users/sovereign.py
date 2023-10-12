@@ -1,0 +1,1 @@
+# A file to define the class of sovereign user

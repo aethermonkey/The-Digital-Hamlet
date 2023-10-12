@@ -2,9 +2,9 @@ import platform
 import subprocess
 import datetime
 
-def list_files(startpath):
-    fs = subprocess.check_output([['tree', '-I venv'], startpath]).decode().split('\n')
-    return str(fs)
+# def list_files(startpath):
+#     fs = subprocess.check_output([['tree', '-I venv'], startpath]).decode().split('\n')
+#     return str(fs)
 
 def get_system_info():
     # Get basic system info

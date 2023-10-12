@@ -1,3 +1,6 @@
+#  We will be using Microsoft's Autogen for agent creation, so I think this class needs to be a child of 
+#  of the Autogen agent classes
+
 class Agent:
     def __init__(self, name, email, traits, address, clearance_level):
         self.name = name
