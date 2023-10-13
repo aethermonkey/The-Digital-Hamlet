@@ -1,14 +1,14 @@
 # Discovery Phase
 
 ## Defining the Tech Stack
-The tech stack for the project will be defined based on the requirements of the project and the expertise of the team. The following questions will help in defining the tech stack:
+The tech stack for the project is defined as follows:
 
-1. What programming languages does the team have expertise in?
-2. What are the specific requirements of the project that might influence the choice of technologies?
-3. Are there any preferences for certain types of technologies (e.g., open source vs proprietary)?
-4. What databases will be used and why?
-5. What frameworks will be used and why?
-6. Are there any other technologies that will be used in the project?
+1. Programming Languages: Python will be used for both backend and frontend development. The team has expertise in Python and it is versatile and easy to learn.
+2. Specific Requirements: The project requires driving agents using Prompt Engineering. Python has libraries like `prompt-toolkit` that can help in building interactive command-line applications.
+3. Technology Preferences: Open source technologies are preferred. Python, Flask/Django, and SQL databases are all open source.
+4. Databases: SQL will be used for managing relational data. A specific SQL database like PostgreSQL or MySQL may be used.
+5. Frameworks: Flask or Django may be used for building the frontend and APIs.
+6. Other Technologies: None at this time.
 
 ## Creating Detailed User Stories
 (TBD)
