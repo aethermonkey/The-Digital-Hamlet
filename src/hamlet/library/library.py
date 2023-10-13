@@ -5,14 +5,21 @@ class Library(GeoEntity):
         super().__init__(name, location)
         self.database = database if database is not None else {}
 
+from ...db import db
+
+class Library(GeoEntity):
+    def __init__(self, name, location, database=None):
+        super().__init__(name, location)
+        self.database = database if database is not None else {}
+
     def create_data_sql(self, data):
-        # code to create data in the SQL database
+        db.create_data_sql(data)
 
     def read_data_sql(self, data_id):
-        # code to read data from the SQL database
+        db.read_data_sql(data_id)
 
     def update_data_sql(self, data_id, new_data):
-        # code to update data in the SQL database
+        db.update_data_sql(data_id, new_data)
 
     def delete_data_sql(self, data_id):
-        # code to delete data from the SQL database
+        db.delete_data_sql(data_id)

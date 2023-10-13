@@ -46,4 +46,14 @@ def get_conversation_by_id(conversation_id):
         c.execute('SELECT * FROM Conversations WHERE conversation_id = ?', (conversation_id,))
         conversation = c.fetchall()
 
-    return conversation
+    return conversationdef create_data_sql(data):
+    # code to create data in the SQL database
+
+def read_data_sql(data_id):
+    # code to read data from the SQL database
+
+def update_data_sql(data_id, new_data):
+    # code to update data in the SQL database
+
+def delete_data_sql(data_id):
+    # code to delete data from the SQL database
