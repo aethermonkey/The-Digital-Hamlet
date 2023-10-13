@@ -7,4 +7,13 @@
 # - In principle, regional entities could combine to great larger and larger entities, like
 #   cities, states, countries, planets, and beyond.  There would be some safe and logical limitation
 #   to the extent of dvisions and mergers.  Alternatively, maybe designing an infrastructure where
-#   different entities (hamlets, regions, cities, etc.) could combine to form larger entities infinitely
+#   different entities (hamlets, regions, cities, etc.) could combine to form larger entities infinitelyclass GeoEntity:
+    def __init__(self, name, location):
+        self.name = name
+        self.location = location
+
+    def get_name(self):
+        return self.name
+
+    def get_location(self):
+        return self.location
