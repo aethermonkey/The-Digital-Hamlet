@@ -1,10 +1,4 @@
 from ..hamlet import GeoEntity
-
-class Library(GeoEntity):
-    def __init__(self, name, location, database=None):
-        super().__init__(name, location)
-        self.database = database if database is not None else {}
-
 from ...db import db
 
 class Library(GeoEntity):

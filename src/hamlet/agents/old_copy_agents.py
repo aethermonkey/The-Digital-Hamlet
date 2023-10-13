@@ -68,7 +68,7 @@ class InfrastructureAgent(Agent):
         
 class SovereignAgent(Agent):  
     """Serves the sovereign directly"""
-    def __init__(self, name, agent_id, location): 
+    def __init__(self, name, agent_id, location=SovereignInstitution): 
         super().__init__(name, agent_id, location)
         self.loyalty = 10 # Level of dedication to the sovereign
         self.security_level = 5 # Level of access to sovereign data 
