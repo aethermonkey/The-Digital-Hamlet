@@ -27,10 +27,10 @@ Detailed user stories for the first sprint are as follows:
 These stories will guide the development process for the first sprint. Each story clearly defines who the user is (the agent), what they want (their goal), and why they want it (the benefit). This format helps to keep the focus on the user's needs throughout the development process.
 
 ## Defining the Towncenter as a Geographical Entity
-All 
+The Towncenter, like all other localities in the hamlet, is a GeoEntity. The `GeoEntity` class is a parent class that represents a geographical entity. It has attributes like `name` and `location`.
 
 ## Creating the Underlying Classes
-(TBD)
+The `Towncenter` class is a child class of `GeoEntity` and it inherits these attributes from the parent class. In addition to these inherited attributes, the `Towncenter` class also has its own attribute `bulletin_board`. These classes have been defined in the `src/hamlet/hamlet.py` and `src/hamlet/towncenter/towncenter.py` files respectively.
 
 ## Planning the Sprint
-(TBD)
+The sprint will involve developing the functionality for the Agent, Library Agent, and Towncenter Agent stories. The details of how the system will achieve these goals will be worked out during the development process, often during discussions between the developers and the product owner.
