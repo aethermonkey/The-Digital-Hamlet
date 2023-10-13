@@ -17,7 +17,7 @@ The tech stack for the project is defined as follows:
 12. Server Environment: The core codebase will be run locally. APIs like OpenAI will be sourced elsewhere.
 13. Other Technologies: Knowledge graphs and hypergraphs for AI reasoning and understanding.
 
-## Creating Detailed User Stories
+## Creating Detailed Agent Stories
 Detailed user stories for the first sprint are as follows:
 
 - As an Agent, I want to have an authorisation level that limits my access to information and abilities depending on various factors.
