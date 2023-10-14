@@ -1,3 +1,6 @@
 from django.db import models
+from TheDigitalHamlet.TheDigitalHamlet.base_models import BaseAgent
 
-# Create your models here.
+class LibraryAgent(BaseAgent):
+    # Additional attributes and methods specific to the LibraryAgent class
+    pass
