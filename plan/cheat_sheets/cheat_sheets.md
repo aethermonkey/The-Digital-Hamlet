@@ -18,15 +18,16 @@ The `Agent` class is an abstract class for AI agent.
 - `generate_reply(self, messages: Optional[List[Dict]] = None, sender: Optional[Agent] = None, **kwargs) -> Union[str, Dict, None]`: Generates a reply based on the received messages.
 
 
-# UserProxyAgent
+# UserProxyAgent Class
 
-- **Path**: /plan/autogen/agentchat/user_proxy_agent.py
-- **Description**: A proxy agent for the user that can execute code and provide feedback to other agents.
-- **Inherits**: ConversableAgent
+The `UserProxyAgent` class is a proxy agent for the user that can execute code and provide feedback to other agents.
+
+## Constructor
+
+- `__init__(name, is_termination_msg=None, max_consecutive_auto_reply=None, human_input_mode="ALWAYS", function_map=None, code_execution_config=None, default_auto_reply="", llm_config=False, system_message="")`: Initializes the `UserProxyAgent`.
 
 ## Methods
 
-- `__init__(name, is_termination_msg=None, max_consecutive_auto_reply=None, human_input_mode="ALWAYS", function_map=None, code_execution_config=None, default_auto_reply="", llm_config=False, system_message="")`: Initializes the UserProxyAgent.
 - `get_human_input(message=None)`: Prompts the user for input.
 - `execute_code_blocks(code_blocks)`: Executes a list of code blocks and returns the results.
 - `run_code(code)`: Executes a single code block and returns the result.
@@ -34,31 +35,21 @@ The `Agent` class is an abstract class for AI agent.
 - `generate_init_message()`: Generates the initial message when a conversation starts.
 - `register_reply(reply_func)`: Registers a reply function for auto-reply.
 
-# conversable_agent.py Cheat Sheet
 
-## Module Information
+# ConversableAgent Class
 
-- **Module**: conversable_agent.py
-- **Path**: /plan/autogen/agentchat/conversable_agent.py
+The `ConversableAgent` class is a base class for generic conversable agents.
 
-## Description
+## Constructor
 
-The `conversable_agent.py` module provides a class `ConversableAgent` that serves as a base class for generic conversable agents. These agents can be configured as assistant or user proxies and can engage in conversations by sending and receiving messages.
+- `__init__(self, name: str, system_message: Optional[str] = "You are a helpful AI Assistant.", is_termination_msg: Optional[Callable[[Dict], bool]] = None, max_consecutive_auto_reply: Optional[int] = None, human_input_mode: Optional[str] = "TERMINATE", function_map: Optional[Dict[str, Callable]] = None, code_execution_config: Optional[Union[Dict, bool]] = None, llm_config: Optional[Union[Dict, bool]] = None, default_auto_reply: Optional[Union[str, Dict, None]] = "")`: Initializes the `ConversableAgent` object.
 
-## Class
-
-### ConversableAgent
-
-- **Description**: A class for generic conversable agents.
-- **Inherits**: Agent
-
-#### Properties
+## Properties
 
 - `system_message`: The system message for the ChatCompletion inference.
 
-#### Methods
+## Methods
 
-- `__init__(self, name: str, system_message: Optional[str] = "You are a helpful AI Assistant.", is_termination_msg: Optional[Callable[[Dict], bool]] = None, max_consecutive_auto_reply: Optional[int] = None, human_input_mode: Optional[str] = "TERMINATE", function_map: Optional[Dict[str, Callable]] = None, code_execution_config: Optional[Union[Dict, bool]] = None, llm_config: Optional[Union[Dict, bool]] = None, default_auto_reply: Optional[Union[str, Dict, None]] = "")`: Initializes the ConversableAgent object.
 - `register_reply(self, trigger: Union[Type[Agent], str, Agent, Callable[[Agent], bool], List], reply_func: Callable, position: Optional[int] = 0, config: Optional[Any] = None, reset_config: Optional[Callable] = None)`: Registers a reply function.
 - `update_system_message(self, system_message: str)`: Updates the system message.
 - `update_max_consecutive_auto_reply(self, value: int, sender: Optional[Agent] = None)`: Updates the maximum number of consecutive auto replies.
@@ -89,47 +80,10 @@ The `conversable_agent.py` module provides a class `ConversableAgent` that serve
 - `generate_init_message(self, **context) -> Union[str, Dict]`: Generates the initial message for the agent.
 - `register_function(self, function_map: Dict[str, Callable])`: Registers functions to the agent.
 
-## Constants
-
-### DEFAULT_CONFIG
-
-- **Description**: The default configuration for the ConversableAgent class.
-
-### MAX_CONSECUTIVE_AUTO_REPLY
-
-- **Description**: The maximum number of consecutive auto replies.
-
-### DEFAULT_MODEL
-
-- **Description**: The default model for ChatCompletion inference.
-
-### UNKNOWN
-
-- **Description**: The unknown language identifier.
-
-### _MATH_PROMPT
-
-- **Description**: The prompt for solving a math problem.
-
-### _MATH_CONFIG
-
-- **Description**: The configuration for solving a math problem.
-
-### _STRIP_STRING_FUNCTIONS
-
-- **Description**: A list of helper functions for stripping math strings.
-
 
 # openai_utils.py Cheat Sheet
 
-## Module Information
-
-- **Module**: openai_utils.py
-- **Path**: /plan/autogen/oai/openai_utils.py
-
-## Description
-
-The `openai_utils.py` module provides utility functions for working with the OpenAI API. It includes functions for getting a unique identifier of a configuration, getting a list of configs for OpenAI API calls, filtering the config list, and more.
+The `openai_utils.py` module provides utility functions for working with the OpenAI API.
 
 ## Functions
 
@@ -204,13 +158,6 @@ The `openai_utils.py` module provides utility functions for working with the Ope
 
 # groupchat.py Cheat Sheet
 
-## Module Information
-
-- **Module**: groupchat.py
-- **Path**: /plan/autogen/agentchat/groupchat.py
-
-## Description
-
 The `groupchat.py` module provides `GroupChat` and `GroupChatManager` classes for managing a group chat with multiple agents.
 
 ## Class
@@ -228,14 +175,8 @@ The `groupchat.py` module provides `GroupChat` and `GroupChatManager` classes fo
 - **Inherits**: ConversableAgent
 - **Methods**: `__init__(groupchat: GroupChat, name: Optional[str], max_consecutive_auto_reply: Optional[int], human_input_mode: Optional[str], system_message: Optional[str], **kwargs)`, `run_chat(messages: Optional[List[Dict]], sender: Optional[Agent], config: Optional[GroupChat])`
 
+
 # completion.py Cheat Sheet
-
-## Module Information
-
-- **Module**: completion.py
-- **Path**: /plan/autogen/oai/completion.py
-
-## Description
 
 The `completion.py` module provides the `Completion` class for the OpenAI completion API and functions for tuning and testing the API.
 
@@ -270,13 +211,6 @@ The `AssistantAgent` class is a subclass of `ConversableAgent` and is designed t
 
 
 # code_utils.py Cheat Sheet
-
-## Module Information
-
-- **Module**: code_utils.py
-- **Path**: /home/cplan/dev/The-Digital-Hamlet/plan/autogen/code_utils.py
-
-## Description
 
 The `code_utils.py` module provides utility functions for working with code blocks and executing code in a Docker container.
 
@@ -428,7 +362,7 @@ The `code_utils.py` module uses Docker for code execution. If Docker is not inst
 
 # MathUserProxyAgent Class
 
-This class is a subclass of `UserProxyAgent` and is designed to handle math problems.
+The `MathUserProxyAgent` class is a subclass of `UserProxyAgent` and is designed to handle math problems.
 
 ## Constructor
 
@@ -444,13 +378,6 @@ This class is a subclass of `UserProxyAgent` and is designed to handle math prob
 
 
 # retrieve_utils.py Cheat Sheet
-
-## Module Information
-
-- **Module**: retrieve_utils.py
-- **Path**: /home/cplan/dev/The-Digital-Hamlet/plan/autogen/retrieve_utils.py
-
-## Description
 
 The `retrieve_utils.py` module provides utility functions for retrieving and processing text data from various sources.
 
@@ -571,25 +498,3 @@ The `retrieve_utils.py` module provides utility functions for retrieving and pro
 ## Helper Functions
 
 The `retrieve_utils.py` module also includes several helper functions for working with files and URLs. These functions are used internally and may not be directly called by the user.
-
-
-# math_utils.py
-
-This module provides functions for solving math problems and evaluating math responses.
-
-## Functions
-
-- `solve_problem(problem: str, **config) -> str`: Solves the math problem.
-- `get_answer(solution: Optional[str]) -> Optional[str]`: Extracts the answer from the solution string.
-- `is_equiv(str1: Optional[str], str2: Optional[str]) -> float`: Checks if two math strings are equivalent.
-- `is_equiv_chain_of_thought(str1: str, str2: str) -> float`: Checks if two math strings are equivalent after stripping the solution.
-- `voting_counts(responses)`: Counts the votes for each response.
-- `eval_math_responses(responses, solution=None, **args)`: Evaluates the math responses and calculates success metrics.
-
-## Constants
-
-- `_MATH_PROMPT`: The prompt for solving a math problem.
-- `_MATH_CONFIG`: The configuration for solving a math problem.
-- `_STRIP_STRING_FUNCTIONS`: A list of helper functions for stripping math strings.
-
-
