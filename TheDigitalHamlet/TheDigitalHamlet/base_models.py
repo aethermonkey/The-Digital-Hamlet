@@ -54,3 +54,14 @@ class BaseItem(models.Model):
 
     class Meta:
         abstract = True
+
+class BaseCurrency(models.Model):
+    name = models.CharField(max_length=200)
+    value = models.FloatField()
+    currency_code = models.CharField(max_length=8)
+    # TODO: Add exchange rate currency codes in order to calculate value again local currency.
+    rates = models.JSONField()
+    
+
+    class Meta:
+        abstract = True
