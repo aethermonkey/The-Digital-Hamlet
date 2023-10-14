@@ -13,7 +13,7 @@ class GeoEntity(models.Model):
     class Meta:
         abstract = True
 
-class BaseAgent(AutogenAgent):
+class BaseAgent(AutogenAgent, models.Model):
     name = models.CharField(max_length=200)
     age = models.PositiveIntegerField()
     location = models.ForeignKey(GeoEntity, on_delete=models.CASCADE)
