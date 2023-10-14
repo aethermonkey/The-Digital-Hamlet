@@ -1,6 +1,6 @@
 # Agent Class
 
-The `Agent` class is an abstract class for AI agents.
+The `Agent` class is an abstract class for AI agent.
 
 ## Constructor
 
