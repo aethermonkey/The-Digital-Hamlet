@@ -1,3 +1,5 @@
+from TheDigitalHamlet.TheDigitalHamlet.base_models import BaseAgent
+
 class LibraryAgent(BaseAgent):
     def __init__(self, name, age, location, traits):
         super().__init__(name, age, location, traits)
