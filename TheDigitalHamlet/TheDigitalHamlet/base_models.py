@@ -20,3 +20,37 @@ class BaseAgent(models.Model):
 
     class Meta:
         abstract = True
+
+class BaseBuilding(models.Model):
+    name = models.CharField(max_length=200)
+    location = models.ForeignKey(GeoEntity, on_delete=models.CASCADE)
+    capacity = models.PositiveIntegerField()
+    type = models.CharField(max_length=200)
+
+    class Meta:
+        abstract = True
+
+class BaseService(models.Model):
+    name = models.CharField(max_length=200)
+    provider = models.ForeignKey(BaseAgent, on_delete=models.CASCADE)
+    type = models.CharField(max_length=200)
+
+    class Meta:
+        abstract = True
+
+class BaseEvent(models.Model):
+    name = models.CharField(max_length=200)
+    location = models.ForeignKey(GeoEntity, on_delete=models.CASCADE)
+    time = models.DateTimeField()
+    participants = models.ManyToManyField(BaseAgent)
+
+    class Meta:
+        abstract = True
+
+class BaseItem(models.Model):
+    name = models.CharField(max_length=200)
+    owner = models.ForeignKey(BaseAgent, on_delete=models.CASCADE)
+    type = models.CharField(max_length=200)
+
+    class Meta:
+        abstract = True
