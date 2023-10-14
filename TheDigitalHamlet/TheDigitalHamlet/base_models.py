@@ -11,3 +11,12 @@ class GeoEntity(models.Model):
 
     class Meta:
         abstract = True
+
+class BaseAgent(models.Model):
+    name = models.CharField(max_length=200)
+    age = models.PositiveIntegerField()
+    location = models.ForeignKey(GeoEntity, on_delete=models.CASCADE)
+    traits = models.JSONField()
+
+    class Meta:
+        abstract = True
