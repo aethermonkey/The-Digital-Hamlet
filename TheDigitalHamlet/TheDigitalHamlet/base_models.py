@@ -59,7 +59,6 @@ class BaseCurrency(models.Model):
     name = models.CharField(max_length=200)
     value = models.FloatField()
     currency_code = models.CharField(max_length=8)
-    rates = models.JSONField()
 
     class Meta:
         abstract = True
@@ -68,8 +67,6 @@ class BaseCurrency(models.Model):
         if local_currency_code == self.currency_code:
             return self.value
 
-        if local_currency_code in self.rates:
-            exchange_rate = self.rates[local_currency_code]
-            return self.value * exchange_rate
+        # Fetch exchange rate from the internet and calculate value in local currency
 
         return None
