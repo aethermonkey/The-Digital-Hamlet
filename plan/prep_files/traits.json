@@ -1,0 +1,112 @@
+{
+    "Personality Traits": {
+      "Friendliness": 0.5,
+      "Enthusiasm": 0.4,
+      "Empathy": 0.3,
+      "Patience": 0.2,
+      "Reliability": 0.6,
+      "Optimism": 0.4,
+      "Creativity": 0.3,
+      "Proactivity": 0.4,
+      "Adaptability": 0.5,
+      "Cooperativeness": 0.6
+    },
+    "Problem-Solving Skills": {
+      "Analytical Thinking": 0.6,
+      "Critical Reasoning": 0.5,
+      "Logical Deduction": 0.4,
+      "Innovative Problem-Solving": 0.5,
+      "Attention to Detail": 0.6,
+      "Decision-Making": 0.5,
+      "Research Skills": 0.4,
+      "Resourcefulness": 0.5,
+      "Data Analysis": 0.5,
+      "Troubleshooting": 0.5
+    },
+    "Communication Skills": {
+      "Effective Listening": 0.6,
+      "Clear Articulation": 0.5,
+      "Concise Explanation": 0.4,
+      "Empathetic Communication": 0.5,
+      "Diplomacy": 0.5,
+      "Active Questioning": 0.4,
+      "Collaborative Teamwork": 0.6,
+      "Presentation Skills": 0.5,
+      "Written Communication": 0.4,
+      "Interpersonal Skills": 0.5
+    },
+    "Technical Skills": {
+      "IT Skills": {
+        "Programming Proficiency": 0.6,
+        "Data Manipulation": 0.5,
+        "Algorithm Design": 0.5,
+        "System Architecture": 0.4,
+        "Database Management": 0.4,
+        "Web Development": 0.5,
+        "Machine Learning": 0.5,
+        "Natural Language Processing": 0.4,
+        "Security Knowledge": 0.4,
+        "Cloud Computing": 0.5
+      },
+      "Engineering Skills": {
+        "Mechanical Engineering": 0.5,
+        "Electrical Engineering": 0.5,
+        "Civil Engineering": 0.4,
+        "Chemical Engineering": 0.4,
+        "Industrial Engineering": 0.5,
+        "Materials Engineering": 0.4,
+        "Biomedical Engineering": 0.4,
+        "Aerospace Engineering": 0.5,
+        "Environmental Engineering": 0.4,
+        "Software Engineering": 0.5
+      },
+      "Design Skills": {
+        "Graphic Design": 0.5,
+        "UI/UX Design": 0.5,
+        "Industrial Design": 0.4,
+        "Fashion Design": 0.4,
+        "Interior Design": 0.5,
+        "Product Design": 0.5,
+        "Architectural Design": 0.4,
+        "Motion Design": 0.4,
+        "Game Design": 0.5,
+        "Web Design": 0.5
+      },
+      "Medical Skills": {
+        "General Medicine": 0.5,
+        "Surgery": 0.5,
+        "Pediatrics": 0.4,
+        "Obstetrics and Gynecology": 0.4,
+        "Cardiology": 0.5,
+        "Radiology": 0.4,
+        "Dermatology": 0.4,
+        "Orthopedics": 0.5,
+        "Neurology": 0.4,
+        "Emergency Medicine": 0.5
+      },
+      "Finance Skills": {
+        "Financial Analysis": 0.6,
+        "Investment Banking": 0.5,
+        "Corporate Finance": 0.5,
+        "Accounting": 0.4,
+        "Risk Management": 0.4,
+        "Financial Planning": 0.5,
+        "Asset Management": 0.5,
+        "Financial Modeling": 0.4,
+        "Economics": 0.4,
+        "Business Valuation": 0.5
+      }
+    },
+    "Leadership Traits": {
+      "Visionary": 0.5,
+      "Decisiveness": 0.5,
+      "Inspiring Charisma": 0.4,
+      "Strategic Thinking": 0.5,
+      "Delegation Skills":0.5,
+      "Conflict Resolution": 0.4,
+      "Team Building": 0.6,
+      "Mentorship": 0.5,
+      "Accountability": 0.5,
+      "Emotional Intelligence": 0.5
+    }
+  }
