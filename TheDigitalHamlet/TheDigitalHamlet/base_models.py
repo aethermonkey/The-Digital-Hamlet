@@ -18,6 +18,9 @@ class BaseAgent(AutogenAgent, models.Model):
     location = models.ForeignKey(GeoEntity, on_delete=models.CASCADE)
     traits = models.JSONField()
 
+    # Inherited attribute from Agent class
+    # name = models.CharField(max_length=200)
+
     class Meta:
         abstract = True
 
