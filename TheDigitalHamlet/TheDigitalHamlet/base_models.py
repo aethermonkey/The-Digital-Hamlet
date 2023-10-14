@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
+from autogen.agent import Agent
 
 class GeoEntity(models.Model):
     name = models.CharField(max_length=200)
@@ -12,7 +13,7 @@ class GeoEntity(models.Model):
     class Meta:
         abstract = True
 
-class BaseAgent(models.Model):
+class BaseAgent(Agent):
     name = models.CharField(max_length=200)
     age = models.PositiveIntegerField()
     location = models.ForeignKey(GeoEntity, on_delete=models.CASCADE)
