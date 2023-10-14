@@ -7,38 +7,19 @@
 
 ## Description
 
-The `groupchat.py` module provides a class `GroupChat` that represents a group chat with multiple agents. It also includes a class `GroupChatManager` that serves as a chat manager agent for managing the group chat.
+The `groupchat.py` module provides `GroupChat` and `GroupChatManager` classes for managing a group chat with multiple agents.
 
 ## Class
 
 ### GroupChat
 
-- **Description**: A class that represents a group chat with multiple agents.
-- **Data Attributes**:
-  - `agents` (List[Agent]): The list of agents participating in the group chat.
-  - `messages` (List[Dict]): The list of messages exchanged in the group chat.
-  - `max_round` (int): The maximum number of rounds in the group chat.
-  - `admin_name` (str): The name of the admin agent in the group chat.
-
-#### Properties
-
-- `agent_names`: Returns the names of the agents in the group chat.
-
-#### Methods
-
-- `reset()`: Resets the group chat.
-- `agent_by_name(name: str) -> Agent`: Finds an agent in the group chat by name.
-- `next_agent(agent: Agent) -> Agent`: Returns the next agent in the group chat.
-- `select_speaker_msg() -> str`: Returns the message for selecting the next speaker.
-- `select_speaker(last_speaker: Agent, selector: ConversableAgent) -> Agent`: Selects the next speaker.
-- `_participant_roles() -> str`: Returns the roles of the participants in the group chat.
+- **Description**: Represents a group chat with multiple agents.
+- **Data Attributes**: `agents`, `messages`, `max_round`, `admin_name`
+- **Properties**: `agent_names`
+- **Methods**: `reset()`, `agent_by_name(name: str)`, `next_agent(agent: Agent)`, `select_speaker_msg()`, `select_speaker(last_speaker: Agent, selector: ConversableAgent)`, `_participant_roles()`
 
 ### GroupChatManager
 
-- **Description**: A class that serves as a chat manager agent for managing a group chat.
+- **Description**: Serves as a chat manager agent for managing a group chat.
 - **Inherits**: ConversableAgent
-
-#### Methods
-
-- `__init__(groupchat: GroupChat, name: Optional[str] = "chat_manager", max_consecutive_auto_reply: Optional[int] = sys.maxsize, human_input_mode: Optional[str] = "NEVER", system_message: Optional[str] = "Group chat manager.", **kwargs)`: Initializes the GroupChatManager object.
-- `run_chat(messages: Optional[List[Dict]] = None, sender: Optional[Agent] = None, config: Optional[GroupChat] = None) -> Union[str, Dict, None]`: Runs the group chat.
+- **Methods**: `__init__(groupchat: GroupChat, name: Optional[str], max_consecutive_auto_reply: Optional[int], human_input_mode: Optional[str], system_message: Optional[str], **kwargs)`, `run_chat(messages: Optional[List[Dict]], sender: Optional[Agent], config: Optional[GroupChat])`
