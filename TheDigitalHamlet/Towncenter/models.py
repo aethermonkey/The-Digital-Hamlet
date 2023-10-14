@@ -1,3 +1,5 @@
 from django.db import models
+from TheDigitalHamlet.TheDigitalHamlet.base_models import GeoEntity
 
-# Create your models here.
+class Towncenter(GeoEntity):
+    pass
