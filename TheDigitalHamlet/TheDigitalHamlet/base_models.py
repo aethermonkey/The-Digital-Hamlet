@@ -62,10 +62,6 @@ class BaseCurrency(models.Model):
     class Meta:
         abstract = True
 
-    def calculate_value_in_local_currency(self, local_currency_code):
-        if local_currency_code == self.currency_code:
-            return self.value
-
-        # Fetch exchange rate from the internet and calculate value in local currency
-
-        return None
+    # The BaseCurrency represents currencies within the digital hamlet.
+    # We will likely need to work out some exchange system in future for realizing exchange rates
+    # between hamlet currency and outside world currency, like USD, AUD, cryptos, etc.
