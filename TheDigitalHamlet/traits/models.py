@@ -9,7 +9,7 @@ class Trait(models.Model):
     
     name = models.CharField(max_length=200)
     value = models.FloatField(validators=[Min(-1.0), Max(1.0)])
-    description = models.TextField()
+    trait_description = models.TextField()
 
     class Meta:
         unique_together = ('agent', 'name')
