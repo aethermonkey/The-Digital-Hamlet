@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
-from autogen.agent import Agent
+from autogen.agentchat.agent import Agent
 
 class GeoEntity(models.Model):
     name = models.CharField(max_length=200)
