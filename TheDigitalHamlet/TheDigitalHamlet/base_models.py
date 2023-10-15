@@ -3,6 +3,7 @@ from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 from autogen.agentchat.agent import Agent as AutogenAgent
 
+
 class GeoEntity(models.Model):
     name = models.CharField(max_length=200)
     location = models.CharField(max_length=200)
@@ -17,6 +18,8 @@ class BaseAgent(AutogenAgent, models.Model):
     age = models.PositiveIntegerField()
     location = models.ForeignKey(GeoEntity, on_delete=models.CASCADE)
     traits = models.JSONField(default=dict)
+    clearance = models.JSONField(default=dict)
+    bank_balance = models.FloatField(default=0.0,)
 
     class Meta:
         abstract = True
@@ -58,6 +61,7 @@ class BaseItem(models.Model):
 class BaseCurrency(models.Model):
     name = models.CharField(max_length=200)
     currency_code = models.CharField(max_length=8)
+    location = models.ForeignKey(GeoEntity, on_delete=models.CASCADE)
 
     class Meta:
         abstract = True
