@@ -4,16 +4,19 @@ class LibraryAgent(BaseAgent):
     def __init__(self, name, age, location, traits):
         super().__init__(name, age, location, traits)
 
+    # Summarise daily conversations and store as knoweledge
+    def daily_conversations_summary(self):
+        data = search_knowledge(query)
+        data = ""
+        data.join(conversations)
+
+
     def store_knowledge(self, knowledge):
         # Store the knowledge in a structured format
         pass
 
     def search_knowledge(self, query):
         # Search the knowledge system for information based on the query
-        pass
-
-    def research_storage_paradigms(self):
-        # Research various knowledge storage paradigms
         pass
 
     def advise_municipal_agents(self):
@@ -28,23 +31,6 @@ class LibraryAgent(BaseAgent):
         # Check the authorisation level of an agent to control access to information
         pass
 
-
 class LibraryManager(BaseAgent):
     def __init__(self, name, age, location, traits):
         super().__init__(name, age, location, traits)
-
-    def create_knowledge(self, knowledge):
-        # Create new knowledge in the knowledge system
-        pass
-
-    def update_knowledge(self, knowledge):
-        # Update existing knowledge in the knowledge system
-        pass
-
-    def delete_knowledge(self, knowledge):
-        # Delete knowledge from the knowledge system
-        pass
-
-    def manage_authorisation(self, agent):
-        # Manage the authorisation levels of agents to control access to information
-        pass
