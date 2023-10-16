@@ -15,12 +15,18 @@ class LibraryAgent(BaseAgent):
         conversations = Conversation.objects.filter(created_at__date=current_date)
 
         # Create a summary of daily conversations
-        summary = ""
+        join_conversations = ""
         for conversation in conversations:
-            summary += f"Conversation between {', '.join(str(agent) for agent in conversation.agents)}\n"
-            summary += f"Created: {conversation.created_at}\n"
-            summary += f"Message: {conversation.message}\n"
-            summary += "------------------------\n"
+            join_conversations += f"Conversation between {', '.join(str(agent) for agent in conversation.agents)}\n"
+            join_conversations += f"Created: {conversation.created_at}\n"
+            join_conversations += f"Message: {conversation.message}\n"
+            join_conversations += "------------------------\n"
+
+        summary = ""
+        # use a NLP library to chunck the join_conversations and summarise them into one single output summary of about 500 words
+        # TODO: use a NLP library
+        summary += join_conversations
+        
 
         # Store the summary as knowledge
         self.store_knowledge(summary)
