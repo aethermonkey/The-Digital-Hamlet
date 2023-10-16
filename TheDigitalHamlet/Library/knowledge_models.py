@@ -10,3 +10,10 @@ class Knowledge(models.Model):
 
     def __str__(self):
         return self.title
+
+    def save(self, *args, **kwargs):
+        # Perform additional logic before saving the knowledge entry
+        # For example, you can perform text summarization here
+        # TODO: Add text summarization logic
+
+        super().save(*args, **kwargs)
