@@ -22,10 +22,9 @@ class LibraryAgent(BaseAgent):
             join_conversations += f"Message: {conversation.message}\n"
             join_conversations += "------------------------\n"
 
-        summary = ""
-        # use a NLP library to chunck the join_conversations and summarise them into one single output summary of about 500 words
-        # TODO: use a NLP library
-        summary += join_conversations
+        # Use an NLP library to summarize the join_conversations into one single output summary of about 500 words
+        # TODO: Use an NLP library for text summarization
+        summary = summarize_text(join_conversations, max_words=500)
 
         # Store the summary as knowledge
         self.store_knowledge(summary)
