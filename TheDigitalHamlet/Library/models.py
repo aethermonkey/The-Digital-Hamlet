@@ -26,7 +26,6 @@ class LibraryAgent(BaseAgent):
         # use a NLP library to chunck the join_conversations and summarise them into one single output summary of about 500 words
         # TODO: use a NLP library
         summary += join_conversations
-        
 
         # Store the summary as knowledge
         self.store_knowledge(summary)
