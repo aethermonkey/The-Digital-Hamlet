@@ -64,7 +64,7 @@ def summarise_this(src_text):
         tokenizer = BartTokenizer.from_pretrained(model_name)    
     
     preprocessed_text = src_text.strip().replace("\n", " ")
-    t5_input_text = "summarize meeting including names: " + preprocessed_text
+    t5_input_text = "who said what: " + preprocessed_text
     tokenized_text = tokenizer.encode(t5_input_text, return_tensors="pt", truncation=True, max_length=1024).to(torch_device)
     summary_ids = model.generate(tokenized_text, min_length=30, max_length=1024)
     summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
