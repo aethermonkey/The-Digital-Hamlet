@@ -1,34 +1,33 @@
 from TheDigitalHamlet.TheDigitalHamlet.base_models import BaseAgent
 from TheDigitalHamlet.Library.conversation_models import Conversation
+from TheDigitalHamlet.Library.knowledge_models import Knowledge
 from datetime import timezone
 
 class LibraryAgent(BaseAgent):
     def __init__(self, name, age, location, traits):
         super().__init__(name, age, location, traits)
 
-    def daily_conversations_summary(self,):
-        # Get the current date                                 
-        current_date = timezone.now().date()                   
-                                                               
-        # Filter conversations for the current day             
+    def daily_conversations_summary(self):
+        # Get the current date
+        current_date = timezone.now().date()
+
+        # Filter conversations for the current day
         conversations = Conversation.objects.filter(created_at__date=current_date)
 
         # Create a summary of daily conversations
         summary = ""
         for conversation in conversations:
             summary += f"Conversation between {', '.join(str(agent) for agent in conversation.agents)}\n"
-            summary += f"Created: {conversation.created_at}"
+            summary += f"Created: {conversation.created_at}\n"
             summary += f"Message: {conversation.message}\n"
             summary += "------------------------\n"
-
-        completion = self
 
         # Store the summary as knowledge
         self.store_knowledge(summary)
 
     def store_knowledge(self, knowledge):
         # Store the knowledge in a structured format
-        knowledge_entry = knowledge.objects.create(title="Daily Conversations Summary", content=knowledge, medium="Text", classification="Summary")
+        knowledge_entry = Knowledge.objects.create(title="Daily Conversations Summary", content=knowledge, medium="Text", classification="Summary")
         knowledge_entry.save()
 
     def search_knowledge(self, query):
