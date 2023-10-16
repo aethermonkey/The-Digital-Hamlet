@@ -1,5 +1,5 @@
 from django.db import models
-from gensim.summarization import summarize
+import spacy as nlp
 
 class Library(models.Model):
     name = models.CharField(max_length=200)
@@ -42,6 +42,7 @@ class LibraryAgent(BaseAgent):
             join_conversations += "------------------------\n"
 
         # Use gensim library to summarize the join_conversations into one single output summary of about 500 words
+        nlp.
         summary = summarize(join_conversations, word_count=500)  # Use gensim's summarize function
 
         # Store the summary as knowledge
