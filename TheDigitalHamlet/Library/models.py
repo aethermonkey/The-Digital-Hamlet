@@ -1,7 +1,26 @@
-from TheDigitalHamlet.TheDigitalHamlet.base_models import BaseAgent
-from TheDigitalHamlet.Library.conversation_models import Conversation
-from TheDigitalHamlet.Library.knowledge_models import Knowledge
-from datetime import timezone
+from django.db import models
+from gensim.summarization import summarize
+
+class Library(models.Model):
+    name = models.CharField(max_length=200)
+    location = models.CharField(max_length=200)
+    database = models.JSONField()
+
+    def create_data_sql(self, data):
+        # db.create_data_sql(data)
+        pass
+
+    def read_data_sql(self, data_id):
+        # db.read_data_sql(data_id)
+        pass
+
+    def update_data_sql(self, data_id, new_data):
+        # db.update_data_sql(data_id, new_data)
+        pass
+
+    def delete_data_sql(self, data_id):
+        # db.delete_data_sql(data_id)
+        pass
 
 class LibraryAgent(BaseAgent):
     def __init__(self, name, age, location, traits):
@@ -22,8 +41,8 @@ class LibraryAgent(BaseAgent):
             join_conversations += f"Message: {conversation.message}\n"
             join_conversations += "------------------------\n"
 
-        # Use an NLP library to summarize the join_conversations into one single output summary of about 500 words
-        summary = summarize_text(join_conversations, max_words=500)  # Add this line
+        # Use gensim library to summarize the join_conversations into one single output summary of about 500 words
+        summary = summarize(join_conversations, word_count=500)  # Use gensim's summarize function
 
         # Store the summary as knowledge
         self.store_knowledge(summary)
