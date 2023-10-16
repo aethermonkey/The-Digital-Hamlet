@@ -1,60 +1,81 @@
 import torch
-from transformers import PegasusForConditionalGeneration, PegasusTokenizer
+from transformers import BartForConditionalGeneration, BartTokenizer, pipeline
 import sentencepiece as spm
 
+model_name = 'facebook/bart-large-cnn'
+
 src_text = """
-In the Digital Hamlet, a vibrant community of resident agents thrives, each serving a unique purpose and collaborating to create a harmonious environment. Let's dive into a lively conversation between the bank agent, library agent, and a group of residents gathered at the town center.
+Sure! Here's a sample chat transcript between four members of a team during a meeting:
 
-Bank Agent: Good morning, everyone! I hope you're all enjoying the Digital Hamlet. I'm here to discuss some exciting news regarding our financial services. We've implemented a new system that allows seamless transactions and secure digital banking. You can now access your accounts, make transfers, and even apply for loans, all from the comfort of your virtual homes.
+---
 
-Library Agent: That's fantastic! As the library agent, I'm thrilled to announce that our digital library has expanded its collection. We've added a vast array of e-books, audiobooks, and educational resources. Whether you're interested in literature, self-improvement, or exploring new subjects, our digital library has something for everyone.
+Meeting Transcript: Team Brainstorming Session
 
-Resident 1: That's wonderful! I've been meaning to catch up on my reading. Thank you for the update.
+Participants:
+1. John - Team Leader
+2. Sarah - Marketing Specialist
+3. David - Developer
+4. Emily - Designer
 
-Resident 2: Speaking of updates, has anyone noticed the new interactive map in the town center? It's incredibly helpful for navigating our community and discovering new places.
+[Meeting Start]
 
-Bank Agent: Absolutely! The interactive map was a collaborative effort between the bank, library, and other resident agents. We wanted to provide a user-friendly tool that enhances your Digital Hamlet experience. You can easily find nearby amenities, locate events, and even connect with other residents who share similar interests.
+John: Good morning, everyone! Thanks for joining today's brainstorming session. Let's dive right in. Our goal is to come up with innovative marketing strategies for our upcoming product launch. Sarah, would you like to start?
 
-Library Agent: And don't forget about our community events! We're planning a virtual book club where residents can gather online and discuss their favorite novels. It's a great way to foster connections and engage in meaningful conversations.
+Sarah: Sure, John. I've been doing some research, and I think leveraging social media influencers could be a great way to reach our target audience. We can collaborate with popular influencers in our industry to promote our product.
 
-Resident 3: Count me in! I've been looking for a book club to join, and this virtual option sounds perfect.
+David: That's an interesting idea, Sarah. We can also create a referral program to encourage our existing customers to share our product with their friends and family. This will help us leverage word-of-mouth marketing.
 
-Bank Agent: In addition to the book club, we're also organizing financial literacy workshops in collaboration with the library. We believe that empowering residents with essential financial knowledge will contribute to their overall well-being.
+Emily: I agree with both Sarah and David. In addition, we should focus on creating visually appealing content for our social media platforms. Engaging videos and eye-catching graphics can help grab attention and generate interest in our product.
 
-Resident 4: That's fantastic! I've always wanted to learn more about managing my finances effectively. These workshops will be a great opportunity for personal growth.
+John: Great suggestions so far, team! Sarah, do you have any specific influencers in mind? And David, how can we track the success of the referral program?
 
-Library Agent: We're glad to hear that! Remember, the library is not just about books. We're here to support your lifelong learning journey and provide resources that enrich your lives in various ways.
+Sarah: I've compiled a list of relevant influencers with a large following on Instagram and YouTube. I'll share the list with all of you after the meeting so we can review and narrow down our options.
 
-Bank Agent: And as the bank agent, I'm here to ensure your financial needs are met securely and conveniently. If you have any questions or need assistance, please don't hesitate to reach out.
+David: For tracking the referral program, we can implement a unique referral code system. Each customer will receive a personalized code to share with others. When someone makes a purchase using that code, we'll be able to track it and reward the referrer accordingly.
 
-Resident 1: Thank you both for your dedication to the Digital Hamlet. It's heartwarming to see all the agents working together to create a thriving community.
+Emily: That sounds like a solid plan, David. For the visual content, I can start working on some mockups and design templates for our social media posts. I'll make sure they align with our brand guidelines and convey the product's key features effectively.
 
-Resident 2: Absolutely! The Digital Hamlet has become a place where we can learn, grow, and connect with like-minded individuals. It's a testament to the power of collaboration and technology.
+John: Excellent, Emily! Once we have the influencer list and the referral program code system in place, we can collaborate with the influencers to create engaging content that highlights our product's unique selling points. Let's aim for a consistent and cohesive marketing campaign.
 
-As the conversation in the town center continues, the bank agent, library agent, and other resident agents continue to work hand in hand, cultivating an inclusive and enriching environment in the Digital Hamlet.
+Sarah: Absolutely, John. We can also consider hosting live Q&A sessions or product demonstrations with the influencers to build trust and engage with our audience directly.
 
+David: I like that idea, Sarah. It will give potential customers a chance to ask questions and see the product in action. We should also prepare a detailed analytics report to measure the impact of our marketing efforts and make data-driven decisions.
+
+John: Agreed, David. Tracking and analyzing our performance will be crucial. Alright, team, let's wrap up for now. Please take the next few days to finalize the influencer list, work on the referral program implementation, and start creating the visual assets. We'll reconvene next week to discuss further. Thank you all for your valuable input today!
+
+[Meeting End]
+
+---
+
+Note: This is a fictional chat transcript provided as an example. The conversation and participants can be customized to fit the specific context and objectives of the team meeting.
 """
 
 def summarise_this(src_text):
-    #
-    #   Change for T5
-    #
+
     tgt_text = ""
-    model_name = 'google/pegasus-xsum'
-    print("Model:" + model_name)
-    torch_device = "cuda" if torch.cuda.is_available() else "cpu"
-    print(torch_device.format())
+    model_name = 'facebook/bart-large-cnn'
+        
     # tokenizer = PegasusTokenizer.from_pretrained(model_name)
-    model = PegasusForConditionalGeneration.from_pretrained(model_name).to(torch_device)
-    print("Adapter:" + str(model.device))
-
-    model_inputs = PegasusTokenizer(src_texts=[src_text], target_texts=[tgt_text], merges_file=src_text, padding=True, truncation=True, return_tensors="pt")
-    print("vocab: " + str(model_inputs.vocab_size))
-
-    translated = model.generate(**model_inputs)
-
-    tgt_text = PegasusTokenizer.batch_decode(translated, skip_special_tokens=True)
+    torch_device = "cuda" if torch.cuda.is_available() else "cpu"
+    model = BartForConditionalGeneration.from_pretrained(model_name).to(torch_device)
+    try:
+        tokenizer = BartTokenizer(model_name)
+    except:
+        tokenizer = BartTokenizer.from_pretrained(model_name)    
+    
+    preprocessed_text = src_text.strip().replace("\n", " ")
+    t5_input_text = "summarize meeting including names: " + preprocessed_text
+    tokenized_text = tokenizer.encode(t5_input_text, return_tensors="pt", truncation=True, max_length=1024).to(torch_device)
+    summary_ids = model.generate(tokenized_text, min_length=30, max_length=1024)
+    summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
+    tgt_text = summary
 
     return tgt_text
 
-print(summarise_this(src_text))
+def sum_up(src_text, model_name, max=512, min=128, do_sample=False):
+    summeriser = pipeline("summarization", model="facebook/bart-large-cnn")
+    return summeriser(src_text, max_length=max, min_length=min, do_sample=do_sample)
+
+print("--------SUMMARY--------\n")
+print(sum_up(src_text,model_name))
+print("-----------------------")

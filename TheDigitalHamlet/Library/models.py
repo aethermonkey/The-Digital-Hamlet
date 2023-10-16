@@ -1,4 +1,7 @@
 from django.db import models
+from TheDigitalHamlet.base_models import BaseAgent
+from django.utils import timezone
+
 
 class Library(models.Model):
     name = models.CharField(max_length=200)
@@ -40,19 +43,9 @@ class LibraryAgent(BaseAgent):
             join_conversations += f"Message: {conversation.message}\n"
             join_conversations += "------------------------\n"
 
-        # Use gensim library to summarize the join_conversations into one single output summary of about 500 words
-        
-        summary = summarize(join_conversations, word_count=500)  # Use gensim's summarize function
-
-        # Store the summary as knowledge
-        self.store_knowledge(summary)
-
-    def summarise_this(self, text):
-        # Summarise the text using SpaCy
-        @llm_tasks="spacy.Summarization.v1"
-        s = nlp.get_pipe("spacy.Summarization.v1")
-
-        summary = summarize(text, word_count=500)  # Use SpaCy's summarize function
+        # Use the function from nlp_tools.py to create a summary
+        summary = summarise_this(text)
+        return summary
 
     def store_knowledge(self, knowledge):
         # Store the knowledge in a structured format
