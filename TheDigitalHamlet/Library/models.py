@@ -2,6 +2,8 @@ from django.db import models
 from TheDigitalHamlet.base_models import BaseAgent
 from django.utils import timezone
 from conversation_models import Conversation
+from knowledge_models import Knowledge
+import nlp_tools
 
 
 class Library(models.Model):
@@ -45,12 +47,12 @@ class LibraryAgent(BaseAgent):
             join_conversations += "------------------------\n"
 
         # Use the function from nlp_tools.py to create a summary
-        summary = summarise_this(text)
+        summary = nlp_tools.summarise_conversations(join_conversations)
         return summary
 
-    def store_knowledge(self, knowledge):
+    def store_knowledge(self, title, content, medium, classification):
         # Store the knowledge in a structured format
-        knowledge_entry = Knowledge.objects.create(title="Daily Conversations Summary", content=knowledge, medium="Text", classification="Summary")
+        knowledge_entry = Knowledge.objects.create(title, content, medium, classification)
         knowledge_entry.save()
 
     def search_knowledge(self, query):
