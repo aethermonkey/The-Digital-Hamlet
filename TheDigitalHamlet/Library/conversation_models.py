@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.postgres.fields import JSONField
 
 class Conversation(models.Model):
+    
     agents = JSONField()
     users = models.JSONField()
     message = models.TextField()

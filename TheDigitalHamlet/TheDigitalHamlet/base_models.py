@@ -5,16 +5,19 @@ from autogen.agentchat.agent import Agent as AutogenAgent
 
 
 class GeoEntity(models.Model):
+    object_id = models.PositiveIntegerField(null=True)
     name = models.CharField(max_length=200)
     location = models.CharField(max_length=200)
-    content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE, null=True)
-    object_id = models.PositiveIntegerField(null=True)
-    content_object = GenericForeignKey('content_type', 'object_id')
+    coords = models.JSONField("Spatial Coordinates", "coords", default=list)
+
 
     class Meta:
         abstract = True
 
 class BaseAgent(AutogenAgent, models.Model):
+    def __init__(self, name):
+        super().__init__(name)
+    agent_id = models.UUIDField(primary_key=True)
     age = models.PositiveIntegerField()
     location = models.ForeignKey(GeoEntity, on_delete=models.CASCADE)
     traits = models.JSONField(default=dict)
