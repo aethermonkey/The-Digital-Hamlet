@@ -4,7 +4,6 @@ from django.contrib.postgres.fields import JSONField
 class Conversation(models.Model):
     agents = JSONField()
     users = models.JSONField()
-    
     message = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
 

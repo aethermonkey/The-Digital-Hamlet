@@ -1,6 +1,7 @@
 from django.db import models
 from TheDigitalHamlet.base_models import BaseAgent
 from django.utils import timezone
+from conversation_models import Conversation
 
 
 class Library(models.Model):
