@@ -21,4 +21,16 @@ class Message(models.Model):
     def __str__(self):
         return f"Message {self.message_id} in Conversation {self.conversation.conversation_id}"
 
-    
+class Knowledge(models.Model):
+    title = models.CharField(max_length=100)
+    content = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    is_outdated = models.BooleanField(default=False)
+
+
+
+    def __str__(self):
+        return self.title
+
+

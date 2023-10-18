@@ -1,8 +1,8 @@
 from django.db import models
 from TheDigitalHamlet.base_models import BaseAgent
 from django.utils import timezone
-from conversation_models import Conversation
-from knowledge_models import Knowledge
+from storage_models import Conversation
+from storage_models import Knowledge
 from ..TheDigitalHamlet import base_models
 import nlp_tools
 
