@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Library.views import library_agent_chat
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("library_agent_chat/", library_agent_chat, name='library_agent_chat'),
 ]
