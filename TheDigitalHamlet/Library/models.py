@@ -32,6 +32,12 @@ class LibraryAgent(BaseAgent):
     def __init__(self, name, age, location, traits):
         super().__init__(name, age, location, traits)
 
+    def send_message(self, message_content):
+        self.send_message(message_content)
+
+    def receive_message(self, message_content):
+        self.receive_message(message_content)
+
     def daily_conversations_summary(self):
         # Get the current date
         current_date = timezone.now().date()
