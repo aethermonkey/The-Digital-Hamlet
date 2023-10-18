@@ -1,4 +1,4 @@
-from autogen_agent import AutogenAgent
+from TheDigitalHamlet.TheDigitalHamlet.base_models import BaseAgent
 from conversation_models import Message, Conversation
 from django.utils import timezone
 
@@ -26,5 +26,5 @@ class LibraryChat:
         message.save()
 
     def start_chat(self):
-        autogen_agent = AutogenAgent(self.library_agent, self.other_agent)
-        autogen_agent.start_conversation()
+        base_agent = BaseAgent(self.library_agent, self.other_agent)
+        base_agent.start_conversation()
