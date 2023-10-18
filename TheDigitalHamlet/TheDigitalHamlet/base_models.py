@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
-from autogen.agentchat.agent import Agent as AutogenAgent
+from autogen.agentchat.agent import Agent
 
 
 class GeoEntity(models.Model):
@@ -14,7 +14,7 @@ class GeoEntity(models.Model):
     class Meta:
         abstract = True
 
-class BaseAgent(AutogenAgent, models.Model):
+class BaseAgent(Agent, models.Model):
     def __init__(self, name):
         super().__init__(name)
     agent_id = models.UUIDField(primary_key=True)
