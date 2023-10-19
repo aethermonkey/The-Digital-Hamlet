@@ -31,24 +31,26 @@
         var history = document.getElementById('chat-history');
 
         document.getElementById('send-button').addEventListener('click', function() {
-            if (input.value === '') {
-                return;
-            }
-            history.innerHTML += '<p>' + input.value + '</p>';
-            input.value = '';
+            submit_message();
         });
 
         input.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 e.preventDefault();
-                if (input.value === '') {
-                    return;
-                }
-                
-                history.innerHTML += '<p>' + input.value + '</p>';
-                input.value = '';
+                submit_message();
             }
         });
+
+        function submit_message() {
+            if (input.value != '') {
+                var message = input.value;
+                history.innerHTML += '<p>' + message + '</p>';
+                input.value = '';
+            }
+            else {
+                return
+            }
+        }
     </script>
 </body>
 </html>
