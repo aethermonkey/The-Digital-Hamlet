@@ -11,5 +11,5 @@ def library_agent_chat(request):
         name="Ben"
         )
     chat = user.initiate_chat(user.name, True, False, context={"message": "Hello there! How are you?"})
-    chat_history = chat
+    chat_history = user._oai_messages
     return render(request, 'library_agent_chat.html', {'chat_history': chat_history})

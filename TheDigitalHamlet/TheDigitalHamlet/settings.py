@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     "TheDigitalHamlet",
     "comms",
     "Towncenter",
-    "storage_models",
 ]
 
 MIDDLEWARE = [
