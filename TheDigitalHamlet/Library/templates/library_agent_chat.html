@@ -18,7 +18,11 @@
 </head>
 <body>
     <h1>Welcome to the Library Agent Chat!</h1>
-    <div id="chat-history"></div>
+    <div id="chat-history">
+        {% for message in chat_history %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    </div>
     <input id="chat-input" type="text" placeholder="Type your message here...">
     <button id="send-button">Send</button>
 
