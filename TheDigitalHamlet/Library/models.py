@@ -1,9 +1,9 @@
 from django.db import models
-from TheDigitalHamlet.TheDigitalHamlet.models import BaseAgent
+from ..TheDigitalHamlet.models import BaseAgent
 from django.utils import timezone
 from .storage_models import Conversation
 from .storage_models import Knowledge
-from TheDigitalHamlet.TheDigitalHamlet.models import GeoEntity
+from ..TheDigitalHamlet.models import GeoEntity
 from .nlp_tools import sum_up
 
 
