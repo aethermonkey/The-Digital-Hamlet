@@ -1,4 +1,5 @@
 from django.db import models
+from TheDigitalHamlet.base_models import BaseBuilding
 
 class Library(models.Model):
     name = models.CharField(max_length=200)
