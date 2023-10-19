@@ -3,11 +3,11 @@ from TheDigitalHamlet.base_models import BaseAgent
 from django.utils import timezone
 from .storage_models import Conversation
 from .storage_models import Knowledge
-from ..TheDigitalHamlet import base_models
-import nlp_tools
+from TheDigitalHamlet.base_models import GeoEntity
+from .nlp_tools import sum_up
 
 
-class Library(base_models.GeoEntity):
+class Library(GeoEntity):
     name = models.CharField(max_length=200)
     location = models.CharField(max_length=200)
     database = models.JSONField()
@@ -29,8 +29,8 @@ class Library(base_models.GeoEntity):
         pass
 
 class LibraryAgent(BaseAgent):
-    def __init__(self, name, age, location, traits):
-        super().__init__(name, age, location, traits)
+    def __init__(self, name):
+        super().__init__(name)
 
     def send_message(self, message_content):
         self.send_message(message_content)
@@ -54,7 +54,7 @@ class LibraryAgent(BaseAgent):
             join_conversations += "------------------------\n"
 
         # Use the function from nlp_tools.py to create a summary
-        summary = nlp_tools.sum_up(join_conversations, "Azma-AI/bart-conversation-summarizer", do_sample=True)
+        summary = sum_up(join_conversations, "Azma-AI/bart-conversation-summarizer", do_sample=True)
         return summary
 
     def store_knowledge(self, title, content, medium, classification):
@@ -80,5 +80,5 @@ class LibraryAgent(BaseAgent):
         pass
 
 class LibraryManager(BaseAgent):
-    def __init__(self, name, age, location, traits):
-        super().__init__(name, age, location, traits)
+    def __init__(self, name, age, traits):
+        super().__init__(name, age, traits)

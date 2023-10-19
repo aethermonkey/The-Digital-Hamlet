@@ -1,5 +1,5 @@
 from django.db import models
-from TheDigitalHamlet.TheDigitalHamlet.base_models import BaseAgent, GeoEntity
+from TheDigitalHamlet.base_models import BaseAgent, GeoEntity
 
 class Towncenter(GeoEntity):
     population = models.PositiveIntegerField()
@@ -33,4 +33,4 @@ class TowncenterAgent(BaseAgent):
 
     pass
 
-Towny = TowncenterAgent('TownyTim',0,Towncenter,get_traits())
+# Towny = TowncenterAgent('TownyTim',0,Towncenter,get_traits())
