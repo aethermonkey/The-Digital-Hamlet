@@ -1,5 +1,5 @@
 from django.db import models
-from ..TheDigitalHamlet.base_models import BaseAgent
+from .models import BaseAgent
 
 # Create your models here.
 

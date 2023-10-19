@@ -1,5 +1,5 @@
-from TheDigitalHamlet.TheDigitalHamlet.base_models import BaseAgent
-from conversation_models import Message, Conversation
+from TheDigitalHamlet.TheDigitalHamlet.models import BaseAgent
+from .comms.models import Message, Conversation
 from django.utils import timezone
 
 class LibraryChat:

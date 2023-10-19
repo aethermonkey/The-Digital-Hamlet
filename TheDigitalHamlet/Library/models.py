@@ -1,5 +1,5 @@
 from django.db import models
-from ..base_models import BaseAgent
+from ..TheDigitalHamlet.models import BaseAgent
 from django.utils import timezone
 from .storage_models import Conversation
 from .storage_models import Knowledge

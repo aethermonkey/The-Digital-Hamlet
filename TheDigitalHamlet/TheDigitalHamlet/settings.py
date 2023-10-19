@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "Library",
     "TheDigitalHamlet",
-    "TheDigitalHamlet.TheDigitalHamlet",
     "comms",
     "Towncenter",
     "Civic",

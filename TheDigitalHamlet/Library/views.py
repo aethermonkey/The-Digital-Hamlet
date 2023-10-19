@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.shortcuts import render
 
 from Library.models import LibraryAgent
-from TheDigitalHamlet.base_models import BaseUserProxyAgent
+from TheDigitalHamlet.TheDigitalHamlet.models import BaseUserProxyAgent
 from autogen import config_list_from_json
 
 
