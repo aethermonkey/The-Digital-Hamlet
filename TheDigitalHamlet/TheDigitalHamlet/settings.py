@@ -37,10 +37,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "Library",
-    "TheDigitalHamlet",
-    "comms",
-    "Towncenter",
+    "TheDigitalHamlet.Library",
+    "TheDigitalHamlet.TheDigitalHamlet",
+    "TheDigitalHamlet.comms",
+    "TheDigitalHamlet.Towncenter",
 ]
 
 MIDDLEWARE = [
