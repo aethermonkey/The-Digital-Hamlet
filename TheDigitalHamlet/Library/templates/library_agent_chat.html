@@ -27,11 +27,20 @@
     <button id="send-button">Send</button>
 
     <script>
+        var input = document.getElementById('chat-input');
+        var history = document.getElementById('chat-history');
+
         document.getElementById('send-button').addEventListener('click', function() {
-            var input = document.getElementById('chat-input');
-            var history = document.getElementById('chat-history');
             history.innerHTML += '<p>' + input.value + '</p>';
             input.value = '';
+        });
+
+        input.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                history.innerHTML += '<p>' + input.value + '</p>';
+                input.value = '';
+            }
         });
     </script>
 </body>
