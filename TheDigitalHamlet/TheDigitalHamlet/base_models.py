@@ -1,8 +1,9 @@
 from django.db import models
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
-from autogen.agentchat.agent import Agent
-
+from autogen.agentchat.assistant_agent import AssistantAgent
+from autogen.agentchat.user_proxy_agent import UserProxyAgent
+# from autogen.agentchat
 
 class GeoEntity(models.Model):
     object_id = models.PositiveIntegerField(null=True)
@@ -14,7 +15,9 @@ class GeoEntity(models.Model):
     class Meta:
         abstract = True
 
-class BaseAgent(Agent, models.Model):
+# class BaseConfigList(models.Model):
+
+class BaseAgent(AssistantAgent, models.Model):
     def __init__(self, name):
         super().__init__(name)
     agent_id = models.UUIDField(primary_key=True)
@@ -26,6 +29,15 @@ class BaseAgent(Agent, models.Model):
 
     class Meta:
         abstract = True
+
+class BaseUserProxyAgent (UserProxyAgent, models.Model):
+    def __init__(self, name):
+        super().__init__(name)
+    agent_id = models.UUIDField(primary_key=True)
+    dob = models.PositiveIntegerField()
+    location = models.ForeignKey(GeoEntity, on_delete=models.CASCADE)
+    clearance = models.JSONField(default=dict)
+    bank_balance = models.FloatField(default=0.0,)
 
 class BaseBuilding(models.Model):
     name = models.CharField(max_length=200)
