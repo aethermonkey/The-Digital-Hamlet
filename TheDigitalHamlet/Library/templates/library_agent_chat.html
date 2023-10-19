@@ -31,6 +31,9 @@
         var history = document.getElementById('chat-history');
 
         document.getElementById('send-button').addEventListener('click', function() {
+            if (input.value === '') {
+                return;
+            }
             history.innerHTML += '<p>' + input.value + '</p>';
             input.value = '';
         });
@@ -38,6 +41,10 @@
         input.addEventListener('keypress', function(e) {
             if (e.key === 'Enter') {
                 e.preventDefault();
+                if (input.value === '') {
+                    return;
+                }
+                
                 history.innerHTML += '<p>' + input.value + '</p>';
                 input.value = '';
             }
