@@ -1,9 +1,9 @@
 from django.db import models
-from TheDigitalHamlet.base_models import BaseAgent
+from ..TheDigitalHamlet.models import BaseAgent
 from django.utils import timezone
 from .storage_models import Conversation
 from .storage_models import Knowledge
-from TheDigitalHamlet.base_models import GeoEntity
+from TheDigitalHamlet.TheDigitalHamlet.models import GeoEntity
 from .nlp_tools import sum_up
 
 
@@ -29,8 +29,8 @@ class Library(GeoEntity):
         pass
 
 class LibraryAgent(BaseAgent):
-    def __init__(self, name):
-        super().__init__(name)
+    def __init__(self, name, llm_config):
+        super().__init__(name, llm_config)
 
     def send_message(self, message_content):
         self.send_message(message_content)
