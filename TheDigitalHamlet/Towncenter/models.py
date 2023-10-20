@@ -1,5 +1,5 @@
 from django.db import models
-from TheDigitalHamlet.TheDigitalHamlet.models import BaseAgent, GeoEntity
+from TheDigitalHamlet.models import BaseAgent, GeoEntity
 
 class Towncenter(GeoEntity):
     population = models.PositiveIntegerField()

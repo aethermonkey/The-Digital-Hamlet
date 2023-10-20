@@ -16,9 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Library.views import library_agent_chat
+from .views import index
+from chat import views as chat_views
+
 
 urlpatterns = [
+    path("", index, name="index"),
     path("admin/", admin.site.urls),
-    path("library_agent_chat/", library_agent_chat, name='library_agent_chat'),
+    path("lobby/", chat_views.lobby, name='lobby'),
 ]

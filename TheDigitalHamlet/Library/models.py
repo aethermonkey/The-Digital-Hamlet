@@ -1,13 +1,14 @@
 from django.db import models
-from ..TheDigitalHamlet.models import BaseAgent
+from TheDigitalHamlet.models import BaseAgent
+from autogen import AssistantAgent
 from django.utils import timezone
 from .storage_models import Conversation
 from .storage_models import Knowledge
-from ..TheDigitalHamlet.models import GeoEntity
+from TheDigitalHamlet.models import GeoEntity
 from .nlp_tools import sum_up
 
 
-class Library(GeoEntity):
+class Library(GeoEntity, models.Model):
     name = models.CharField(max_length=200)
     location = models.CharField(max_length=200)
     database = models.JSONField()
@@ -28,7 +29,7 @@ class Library(GeoEntity):
         # db.delete_data_sql(data_id)
         pass
 
-class LibraryAgent(BaseAgent):
+class LibraryAgent(BaseAgent, models.Model):
     def __init__(self, name, llm_config):
         super().__init__(name, llm_config)
 

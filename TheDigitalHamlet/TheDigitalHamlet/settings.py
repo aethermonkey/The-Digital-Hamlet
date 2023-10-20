@@ -37,12 +37,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "Library",
     "TheDigitalHamlet",
-    "comms",
+    "Library",
     "Towncenter",
     "Civic",
-    "SovereignInstitute"
+    "SovereignInstitute",
+    "chat",
 ]
 
 MIDDLEWARE = [
