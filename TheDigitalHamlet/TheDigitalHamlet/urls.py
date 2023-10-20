@@ -15,13 +15,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path
 from .views import index
 from chat import views as chat_views
+from chat import consumers
 
 
 urlpatterns = [
     path("", index, name="index"),
     path("admin/", admin.site.urls),
     path("lobby/", chat_views.lobby, name='lobby'),
+    re_path(r'ws/chat/(?P<room_name>\w+)/$', consumers.ChatConsumer.as_asgi()),
 ]
