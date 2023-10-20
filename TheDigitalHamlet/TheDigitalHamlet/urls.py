@@ -25,5 +25,6 @@ urlpatterns = [
     path("", index, name="index"),
     path("admin/", admin.site.urls),
     path("lobby/", chat_views.lobby, name='lobby'),
+    path("chat/<str:room_name>/", chat_views.room, name='room_name'),
     re_path(r'ws/chat/(?P<room_name>\w+)/$', consumers.ChatConsumer.as_asgi()),
 ]

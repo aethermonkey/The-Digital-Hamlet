@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "daphne",
+    "channels",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -43,7 +45,7 @@ INSTALLED_APPS = [
     "Civic",
     "SovereignInstitute",
     "chat",
-    "channels",
+    
 ]
 
 MIDDLEWARE = [
