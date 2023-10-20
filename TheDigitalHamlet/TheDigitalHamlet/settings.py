@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     "Civic",
     "SovereignInstitute",
     "chat",
-    "channels"
+    "channels",
 ]
 
 MIDDLEWARE = [
