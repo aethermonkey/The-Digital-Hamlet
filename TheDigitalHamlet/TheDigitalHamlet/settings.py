@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "chat",
     "daphne",
     "channels",
     "django.contrib.admin",
@@ -44,7 +45,7 @@ INSTALLED_APPS = [
     "Towncenter",
     "Civic",
     "SovereignInstitute",
-    "chat",
+
     
 ]
 
@@ -78,7 +79,7 @@ TEMPLATES = [
     },
 ]
 
-ASGI_APPLICATION = "TheDigitalHamlet.wsgi.application"
+ASGI_APPLICATION = "TheDigitalHamlet.asgi.application"
 
 
 # Database
