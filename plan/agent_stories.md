@@ -33,4 +33,3 @@ As a Civic Development Agent, I want to specialise in one aspect of the developm
 As a Civic Quality Assurance Agent, I want to review any new plans, assess if the developed code reflects the plans, and provide feedback to other Civic Agents to review their projects and resubmit code after changes have been made.
 As a Civic Quality Assurance Agent, I want to make final decisions on approving implementation of code into the codebase.
 As a Civic
-^C KeyboardInterrupt

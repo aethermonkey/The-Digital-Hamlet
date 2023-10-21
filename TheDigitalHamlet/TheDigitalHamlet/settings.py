@@ -44,9 +44,7 @@ INSTALLED_APPS = [
     "Library",
     "Towncenter",
     "Civic",
-    "SovereignInstitute",
-
-    
+    "SovereignInstitute",    
 ]
 
 MIDDLEWARE = [
