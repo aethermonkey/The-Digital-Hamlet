@@ -2,11 +2,30 @@
 {% block content %}
     <form>
         <div class = "form-group">
-            <h2 class="form-text">{{ room_name }}</h2>
-            <textarea id="chat-log" class = "form-text" cols="50" rows="5"></textarea><br>
-            <input id="chat-message-input" class = "form-text" type="text" size="50"><br>
-            <input id="chat-message-submit" class = "btn" type="button" value="Send">
-            {{ room_name|json_script:"room-name" }}
+            
+
+            <!-- create 3 bootstrap collumns-->
+            <div class = "text">
+            <div class="row">
+                <div class="col-3 p-3 mb-2">
+                    <label class = "form-text">History</label>
+                    <div id="chat-history" class = "form-text"></div>
+                </div>
+                <div class="col-6 p-3 mb-2">
+                    <label class="form-text">{{ room_name }}</label>
+                    <textarea id="chat-log" class = "form-text" cols="50" rows="20"></textarea><br>
+                    <input id="chat-message-input" class = "form-text" type="text" size="50"><br>
+                    <input id="chat-message-submit" class = "btn" type="button" value="Send">
+                    {{ room_name|json_script:"room-name" }}
+                </div>
+                <div class="col-3 p-3 mb-2">
+                    <label class = "form-text">Participants</label>
+                    <div id="chat-participants" class = "form-text"></div>
+                </div>
+            </div>
+            </div>
+
+
         </div>
     </form>
     <script>
