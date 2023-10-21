@@ -7,21 +7,40 @@
             <!-- create 3 bootstrap collumns-->
             <div class = "text">
             <div class="row">
-                <div class="col-3 p-3 mb-2">
-                    <label class = "form-text">History</label>
-                    <div id="chat-history" class = "form-text"></div>
+                <div class="col-3 p-3 mb-2 border">
+                    <label class = "form-text font-weight-bold">Locations</label>
+                    <div id="chat-rooms" class = "form-text">
+                        <ul>
+                            {% for room in rooms %}
+                                <li>{{ room }}</li>
+                            {% endfor %}
+                        </ul>
+                        <p>A list of messages is shown below.</p>
+                    </div>
                 </div>
-                <div class="col-6 p-3 mb-2">
-                    <label class="form-text">{{ room_name }}</label>
-                    <textarea id="chat-log" class = "form-text" cols="50" rows="20"></textarea><br>
-                    <input id="chat-message-input" class = "form-text" type="text" size="50"><br>
-                    <input id="chat-message-submit" class = "btn" type="button" value="Send">
-                    {{ room_name|json_script:"room-name" }}
-                </div>
-                <div class="col-3 p-3 mb-2">
-                    <label class = "form-text">Participants</label>
-                    <div id="chat-participants" class = "form-text"></div>
-                </div>
+                
+                    <div class="col-6 mb-2">
+                        <label class="form-text font-weight-bold">{{ room_name }}</label>
+                        <textarea id="chat-log" class = "form-text" cols="50" rows="20"></textarea><br>
+                        <input id="chat-message-input" class = "form-text" type="text" size="50"><br>
+                        <input id="chat-message-submit" class = "btn btn-secondary" type="button" value="Send">
+                        {{ room_name|json_script:"room-name" }}
+                    </div>
+                    <div class="col-3 mb-2 font-weight-bold">
+                        <label class = "form-text">Participants</label>
+                        <div id="chat-participants" class = "form-text">
+                            <ul>
+                                {% for participant in participants %}
+                                    <li>{{ participant }}</li>
+                                {% endfor %}
+                                <p>
+                                    A list of participants is shown below.
+                                </p>
+                            </ul>
+
+                        </div>
+                    </div>
+                
             </div>
             </div>
 

@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 from autogen.agentchat.assistant_agent import AssistantAgent
@@ -21,7 +22,7 @@ class GeoEntity(models.Model):
 
 # class BaseConfigList(models.Model):
 
-class BaseAgent(AssistantAgent, models.Model):
+class BaseAgent(AbstractUser, AssistantAgent, models.Model):
     def __init__(
         self,
         name: str,
@@ -59,6 +60,7 @@ class BaseAgent(AssistantAgent, models.Model):
             code_execution_config,
             llm_config,
             **kwargs,
+            
         )
     agent_id = models.UUIDField(primary_key=True)
     age = models.PositiveIntegerField()
