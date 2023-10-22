@@ -2,40 +2,38 @@
 {% block content %}
     <form>
         <div class = "form-group">
-            
-
             <!-- create 3 bootstrap collumns-->
-            <div class = "text">
+            <div class = "text mt-1">
             <div class="row">
-                <div class="col-3 p-3 mb-2 border">
+                <div class="col-3 mb-2 border">
                     <label class = "form-text font-weight-bold">Locations</label>
                     <div id="chat-rooms" class = "form-text">
-                        <ul>
+                        <ul class = "list-group">
                             {% for room in rooms %}
-                                <li>{{ room }}</li>
+                            <a href = "/chat/{{ room }}" id = "{{ room }}">
+                                <li id = "room_link" class = "list-group-item font-weight-bold">
+                                    {{ room }}
+                                </li>
+                            </a>
                             {% endfor %}
                         </ul>
-                        <p>A list of messages is shown below.</p>
+                        
                     </div>
                 </div>
-                
-                    <div class="col-6 mb-2">
+                    <div class="col-6 border">
                         <label class="form-text font-weight-bold">{{ room_name }}</label>
-                        <textarea id="chat-log" class = "form-text" cols="50" rows="20"></textarea><br>
+                        <textarea id="chat-log" class = "form-text" cols="70" rows="20"></textarea><br>
                         <input id="chat-message-input" class = "form-text" type="text" size="50"><br>
                         <input id="chat-message-submit" class = "btn btn-secondary" type="button" value="Send">
                         {{ room_name|json_script:"room-name" }}
                     </div>
-                    <div class="col-3 mb-2 font-weight-bold">
+                    <div class="col-3 font-weight-bold">
                         <label class = "form-text">Participants</label>
                         <div id="chat-participants" class = "form-text">
-                            <ul>
+                            <ul class = "list-group">
                                 {% for participant in participants %}
-                                    <li>{{ participant }}</li>
+                                    <li class = "list-group-item">{{ participant }}</li>
                                 {% endfor %}
-                                <p>
-                                    A list of participants is shown below.
-                                </p>
                             </ul>
 
                         </div>
@@ -60,7 +58,7 @@
 
         chatSocket.onmessage = function(e) {
             var data = JSON.parse(e.data);
-            // var message = data['message'];
+            var message = data['message'];
             document.querySelector('#chat-log').value += (message + '\n');
         };
 
@@ -78,10 +76,13 @@
         document.querySelector('#chat-message-submit').onclick = function(e) {
             var messageInputDom = document.querySelector('#chat-message-input');
             var message = messageInputDom.value;
-            chatSocket.send(JSON.stringify({
-                'message': message
-            }));
-
+            if (chatSocket){
+                chatSocket.send(JSON.stringify({
+                    'message': message
+                }));
+            } else {
+                console.log("Something derped with the send thing")
+            };
             messageInputDom.value = '';
         };
     </script>

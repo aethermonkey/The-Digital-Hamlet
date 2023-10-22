@@ -30,6 +30,12 @@ class Library(GeoEntity, models.Model):
         pass
 
 class LibraryAgent(BaseAgent, models.Model):
+    """
+    Agent class for Librarian
+    Takes: 
+    BaseAgent
+    models.Model
+    """
     def __init__(self, name, llm_config):
         super().__init__(name, llm_config)
 

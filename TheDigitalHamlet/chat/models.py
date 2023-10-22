@@ -10,4 +10,4 @@ class Rooms(models.Model):
     name = models.CharField(max_length=255)
     created_at = models.DateTimeField(auto_now_add=True)
     participants = models.ManyToManyField(Conversation)
-    host = models.ForeignKey(Conversation, on_delete=models.CASCADE)
+    host = models.ForeignKey(Conversation, on_delete=models.CASCADE, related_name="host_conversation")

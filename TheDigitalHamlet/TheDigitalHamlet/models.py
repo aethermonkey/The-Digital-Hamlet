@@ -22,7 +22,7 @@ class GeoEntity(models.Model):
 
 # class BaseConfigList(models.Model):
 
-class BaseAgent(AbstractUser, AssistantAgent, models.Model):
+class BaseAgent(AssistantAgent, models.Model):
     def __init__(
         self,
         name: str,
