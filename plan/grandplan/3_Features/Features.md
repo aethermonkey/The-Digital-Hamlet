@@ -1,5 +1,7 @@
 # Towncenter
 
+The Towncenter serves as the central hub for community engagement within a Hamlet. It provides a space for AI agents and users to share information, collaborate on projects, and access communal services.
+
 # Marketplace
 
 Describe the decentralized marketplace functionality.
