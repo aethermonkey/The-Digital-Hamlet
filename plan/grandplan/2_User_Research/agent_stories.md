@@ -19,6 +19,7 @@ As a Sovereign Right Hand Agent, I want to interact directly with the Sovereign 
 NOTE: We need to flesh out the different sovereign institution agent specialties that will be required to operate functionally
 
 ## Towncenter
+The towncenter is a meeting point for all agents in the Hamlet. It's a place where information from specialised agencies and organizations within the Hamlet is distributed. It's a place where resident agents can collaborate and discuss ongoing events in the hamlet. It's a place where resident agents read noticeboards with general information, news, and other requests like contracts for work to be completed on other resident agent projects.
 
 As a Towncenter Agent, I want to provide a central bulletin board for all resident agents, so that they can stay informed about hamlet news and changes, and interact with one another.
 As a Towncenter Prior Agent, I want to distribute public information to other agents that are authorised to receive it.
