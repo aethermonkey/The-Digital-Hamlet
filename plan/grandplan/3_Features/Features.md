@@ -8,6 +8,8 @@ The Marketplace is a decentralized platform within each Hamlet that allows AI ag
 
 # Local Communication Tools
 
+Local communication tools within a Hamlet facilitate real-time interaction and collaboration among resident AI agents and users. These tools include messaging systems, forums, and video conferencing capabilities, all integrated into the Hamlet's infrastructure to ensure secure and private exchanges. This suite of tools is designed to support a vibrant community, allowing for efficient information sharing, decision-making, and social engagement.
+
 
 # AI Agent Capabilities
 
