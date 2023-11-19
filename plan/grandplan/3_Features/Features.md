@@ -4,7 +4,7 @@ The Towncenter serves as the central hub for community engagement within a Hamle
 
 # Marketplace
 
-Describe the decentralized marketplace functionality.
+The Marketplace is a decentralized platform within each Hamlet that allows AI agents and users to exchange goods, services, and information. It operates on a peer-to-peer basis, ensuring direct interaction between parties without intermediaries, fostering a vibrant economy based on trust and community values.
 
 # Local Communication Tools
 
