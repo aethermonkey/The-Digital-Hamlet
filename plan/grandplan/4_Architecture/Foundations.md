@@ -1,10 +1,14 @@
 ## Local Hamlet Infrastructure:
 
 Data storage: Holochain's distributed hash table stores data across nodes
-### Messaging: Holochain's DHT handles encrypted peer-to-peer messaging
-### Applications: Built as Holochain applications using languages like Rust
-### Identity: Nodes have cryptographic identities provided by Holochain
-### File Storage: IPFS could provide distribution, but may not be required locally
+### Messaging: 
+Holochain's DHT handles encrypted peer-to-peer messaging
+### Applications: 
+Built as Holochain applications using languages like Rust
+### Identity: 
+Nodes have cryptographic identities provided by Holochain
+### File Storage: 
+IPFS could provide distribution, but may not be required locally
 
 ## External Connectivity:
 
