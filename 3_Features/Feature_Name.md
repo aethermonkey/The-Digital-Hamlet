@@ -1,3 +1,0 @@
-# Feature_Name
-
-Detailed description...
