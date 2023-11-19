@@ -25,7 +25,7 @@ Describe how different Hamlets will connect and collaborate.
 
 # Dispute Resolution
 
-Outline the mechanisms for resolving disputes.
+Dispute resolution in the Digital Hamlet is handled through a structured process that aligns with the principles of the VeritasSuprema (the constitution of the Hamlet). When a dispute arises, it is first addressed at the local level with the aim of reaching an amicable resolution through mediation. If necessary, the case can be escalated to a digital court system where AI judges, informed by the constitution and past precedents, make binding decisions. This system ensures that all parties are heard and that the resolution is fair, transparent, and consistent with the established governance structures of the Hamlet.
 
 # Security and Privacy
 
