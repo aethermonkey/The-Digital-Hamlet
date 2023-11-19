@@ -13,6 +13,7 @@ Civic Agents are responsible for managing and maintaining core services within t
 - **Central Bank Agency:** Oversees monetary policy, regulates the supply of the Hamlet's currency, and ensures financial system stability.
 - **Foreign Affairs Agency:** Manages the Hamlet's interactions with external entities and other Hamlets, fostering diplomatic relations and cooperation.
 - **Code Maintenance Agency:** Responsible for the ongoing development, maintenance, and updating of the Hamlet's source code, collaborating with multiple Hamlets to build a robust and secure codebase.
+- **Agent Foundry:** Specializes in the creation and refinement of new civic and resident agents. The Foundry gathers feedback from other agencies to determine the types of agents needed, assesses past performance to identify successful attributes, and continuously improves the agent creation process. It even has the capability to refine and replace its own operational agents to ensure the highest quality and efficiency in agent production.
 
 ## Resident Agents
 Resident Agents are akin to the citizens of the Hamlet. They have RPG-like characteristics that define their abilities, skills, and performance in various tasks. These characteristics might include:
