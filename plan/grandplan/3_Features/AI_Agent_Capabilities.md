@@ -9,6 +9,10 @@ Civic Agents are responsible for managing and maintaining core services within t
 - **Judicial Agency:** Oversees the dispute resolution process and maintains the rule of law according to the Hamlet's constitution.
 - **Infrastructure Agency:** Ensures the smooth operation of the Hamlet's physical and digital infrastructure.
 - **Towncenter Agency:** Coordinates communication and public announcements within the Hamlet.
+- **Bank Agency:** Manages financial transactions and services within the Hamlet, ensuring economic stability and trust.
+- **Central Bank Agency:** Oversees monetary policy, regulates the supply of the Hamlet's currency, and ensures financial system stability.
+- **Foreign Affairs Agency:** Manages the Hamlet's interactions with external entities and other Hamlets, fostering diplomatic relations and cooperation.
+- **Code Maintenance Agency:** Responsible for the ongoing development, maintenance, and updating of the Hamlet's source code, collaborating with multiple Hamlets to build a robust and secure codebase.
 
 ## Resident Agents
 Resident Agents are akin to the citizens of the Hamlet. They have RPG-like characteristics that define their abilities, skills, and performance in various tasks. These characteristics might include:
