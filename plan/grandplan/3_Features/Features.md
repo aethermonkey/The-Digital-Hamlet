@@ -73,7 +73,7 @@ Through these measures, the Digital Hamlet framework ensures a robust and dynami
 
 # Customization and Personalization
 
-Describe user customization and AI personalization options.
+Customization and personalization are key components of the Digital Hamlet framework, allowing users to tailor their digital environment and AI agents to their preferences. Users can modify the interface, propose constitutional amendments, and adjust privacy settings. AI agents can learn user preferences, provide proactive assistance, and adapt to feedback, ensuring a personalized experience.
 
 # Interoperability and Standards
 
