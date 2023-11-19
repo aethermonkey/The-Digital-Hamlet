@@ -21,7 +21,7 @@ The Digital Hamlet employs a decentralized governance model that emphasizes the 
 
 # Inter-Hamlet Connectivity
 
-Describe how different Hamlets will connect and collaborate.
+Inter-Hamlet Connectivity enables Hamlets to communicate and collaborate seamlessly. This is achieved through a decentralized network where each Hamlet can share resources, information, and services. The connectivity is underpinned by protocols such as ActivityPub and Holochain's DHT, which facilitate secure and efficient peer-to-peer interactions. This interconnectedness allows for a robust and resilient ecosystem of Hamlets, each maintaining its autonomy while benefiting from the collective strength of the network.
 
 # Dispute Resolution
 
