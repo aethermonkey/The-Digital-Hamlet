@@ -1,6 +1,7 @@
 ## Local Hamlet Infrastructure:
 
-Data storage: Holochain's distributed hash table stores data across nodes
+### Data storage: 
+Holochain's distributed hash table stores data across nodes
 ### Messaging: 
 Holochain's DHT handles encrypted peer-to-peer messaging
 ### Applications: 
