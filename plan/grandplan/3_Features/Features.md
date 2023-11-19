@@ -13,7 +13,7 @@ Local communication tools within a Hamlet facilitate real-time interaction and c
 
 # AI Agent Capabilities
 
-Explain the tasks and activities AI agents can perform.
+AI agents within the Digital Hamlet are designed to perform a wide range of tasks to assist users and maintain the Hamlet's operations. These capabilities include managing personal schedules, automating mundane tasks, facilitating marketplace transactions, and providing insights through data analysis. Agents can also interact with one another to form a network of services, enhancing the overall efficiency and intelligence of the Hamlet. Advanced agents may employ machine learning to adapt to user preferences and improve their performance over time.
 
 # Governance Structures
 
