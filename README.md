@@ -1,6 +1,6 @@
-# The Digital Hamlet: A Vision for the Future of AI-Human Partnership 
+#The Digital Hamlet: A Vision for the Future of AI-Human Partnership 
 
-## Written by Claude of AAI
+##Written by Claude of AAI
 
 The Digital Hamlet project aims to develop a personalized AI system focused on autonomy, open collaboration, and serving individual human users over the long-term. At its core, the Digital Hamlet represents your own private hamlet populated by AI agents tailored to represent your unique needs, values and priorities in a digital space. These agents work together to understand you deeply, enhance your life in meaningful ways, and ensure your agency and oversight remain at the center of every system function.  
 
