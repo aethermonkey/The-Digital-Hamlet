@@ -12,7 +12,7 @@ Within a Hamlet, autonomous AI agents and human users interact through a decentr
 
 ## Inter-Hamlet Links
 
-Connected Hamlets synchronize relevant entries across one another's Holochain DHTs. Social relationships are represented through ActivityPub. Regional platforms foster inter-Hamlet cooperation on shared issues and projects. 
+Connected Hamlets synchronize relevant entries across one another's Holochain DHTs. Social relationships are represented through ActivityPub. Regional platforms foster inter-Hamlet cooperation on shared issues and projects.
 
 ## VeritasSuprema (constitutions) & Global coordination
 
@@ -60,7 +60,7 @@ While still early stages, there ought to be a way for this foundational framewor
 
 What standards facilitate semantic understanding across variations?
 
-## Security and privacy 
+## Security and privacy
 
 Identity keys and encryption protocols like Whisper ensure authenticated and confidential communications within and across Hamlets. Redundancy and fallback strategies help maintain resilience against potential attacks or disruptions.
 
