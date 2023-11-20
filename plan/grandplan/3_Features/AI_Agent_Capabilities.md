@@ -3,6 +3,7 @@
 AI agents within the Digital Hamlet are designed to perform a wide range of tasks to assist users and maintain the Hamlet's operations. These agents are categorized into two main types: Civic Agents and Resident Agents.
 
 ## Civic Agents
+
 Civic Agents are responsible for managing and maintaining core services within the Hamlet. They are akin to the public service agencies in a traditional government and are divided into different agencies, each with a specific focus area. For example:
 
 - **Library Agency:** Manages the storage and retrieval of knowledge within the Hamlet.
@@ -16,6 +17,7 @@ Civic Agents are responsible for managing and maintaining core services within t
 - **Agent Foundry:** Specializes in the creation and refinement of new civic and resident agents. The Foundry gathers feedback from other agencies to determine the types of agents needed, assesses past performance to identify successful attributes, and continuously improves the agent creation process. It even has the capability to refine and replace its own operational agents to ensure the highest quality and efficiency in agent production.
 
 ## Resident Agents
+
 Resident Agents are akin to the citizens of the Hamlet. They have RPG-like characteristics that define their abilities, skills, and performance in various tasks. These characteristics might include:
 
 - **Strength:** Determines an agent's ability to perform labor-intensive tasks.
