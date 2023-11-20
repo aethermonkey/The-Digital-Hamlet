@@ -2,6 +2,6 @@
 
 ## Default hamlet
 
-## Open to visitors hamlet
+## attraction hamlet 
 
 ## 
