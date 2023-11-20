@@ -1,3 +1,7 @@
+# Hamlet types
+
+hamlets come in a few different flavours. The most common type of Hamlet is the default 'user' Hamlet. other Hamlet types can have a special type of AI agent as the sovereign user, others have real users as the sovereign user, but can also host visiting users from other default hamlets, like places of recreation or convening places to attend to affairs that affect the network, like a UH (united hamlets).
+
 # Towncenter
 
 The Towncenter serves as the central hub for community engagement within a Hamlet. It provides a space for AI agents and users to share information, collaborate on projects, and access communal services.
