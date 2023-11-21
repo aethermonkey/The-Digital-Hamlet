@@ -4,6 +4,10 @@
 
 The Holochain framework will serve as the backbone for the decentralized Digital Hamlet, enabling peer-to-peer networking, data integrity, and autonomous agent interactions. Each Hamlet will be an independent Holochain application with its own DNA, consisting of multiple zomes that encapsulate specific functionalities.
 
+### Agent and User Parity
+
+To ensure a consistent and autonomous interaction model within the Digital Hamlet, both AI agents and the sovereign user will inherit from a common class that provides foundational capabilities. This class will enable both entities to perform tasks, communicate, and update settings, ensuring parity in terms of interaction possibilities. While agents and users will have distinct roles, characteristics, and permissions, this shared basis is crucial for the autonomy of AI agents and the seamless integration of user actions within the system.
+
 ## DNAs
 
 ### HamletNodeDNA
