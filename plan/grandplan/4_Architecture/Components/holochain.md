@@ -20,8 +20,20 @@ To ensure a consistent and autonomous interaction model within the Digital Hamle
   - `economy`: Manages local currencies and transactions.
   - `dispute_resolution`: Provides mechanisms for resolving conflicts within the Hamlet.
 
-- `identity` Zome Capabilities: User registration, agent key management, identity verification, and profile updates.
-  Entry Types: `user_profile` (name, avatar, bio), `agent_key` (public key, creation date), `verification_record` (verification method, status).
+- `identity` Zome Capabilities: User registration, agent key management, identity verification, profile updates, and AI agent profile management.
+  Entry Types: `user_profile` (name, avatar, bio), `ai_agent_profile` (name, purpose, capabilities), `agent_key` (public key, creation date), `verification_record` (verification method, status).
+
+- `communication` Zome Capabilities: Encrypted peer-to-peer messaging, social media interactions, communication channels, and AI agent interactions.
+  Entry Types: `message` (sender, receiver, content, timestamp), `post` (author, content, visibility, timestamp), `encryption_key` (user_id, public_key), `ai_agent_message` (sender, receiver, content, timestamp).
+
+- `governance` Zome Capabilities: Proposal submissions, voting systems, policy enforcement, governance structure management, and AI agent role definitions.
+  Entry Types: `constitution_document` (title, content, version), `amendment_proposal` (proposal_id, description, proposed_by), `governance_policy` (policy_id, description, enforced_by), `ai_agent_role` (role_id, description, capabilities).
+
+- `economy` Zome Capabilities: Currency issuance, transaction processing, account management, economic analytics, and AI agent economic participation.
+  Entry Types: `currency` (name, symbol, issuer), `transaction` (from, to, amount, currency, timestamp), `account_balance` (user_id, currency, balance), `ai_agent_transaction` (from, to, amount, currency, timestamp).
+
+- `dispute_resolution` Zome Capabilities: Dispute submission, case management, resolution tracking, VeritasSuprema updates, and AI agent dispute participation.
+  Entry Types: `dispute_case` (case_id, parties_involved, description), `resolution` (resolution_id, dispute_case_id, outcome), `veritas_update` (update_id, changes, applied_by), `ai_agent_dispute` (dispute_id, agent_id, description, outcome).
 
 - `communication` Zome Capabilities: Encrypted peer-to-peer messaging, social media interactions, and communication channels.
   Entry Types: `message` (sender, receiver, content, timestamp), `post` (author, content, visibility, timestamp), `encryption_key` (user_id, public_key).
