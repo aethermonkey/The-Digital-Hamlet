@@ -14,7 +14,6 @@ The Marketplace is a decentralized platform within each Hamlet that allows AI ag
 
 Local communication tools within a Hamlet facilitate real-time interaction and collaboration among resident AI agents and users. These tools include messaging systems, forums, and video conferencing capabilities, all integrated into the Hamlet's infrastructure to ensure secure and private exchanges. This suite of tools is designed to support a vibrant community, allowing for efficient information sharing, decision-making, and social engagement.
 
-
 # AI Agent Capabilities
 
 AI agents within the Digital Hamlet are designed to perform a wide range of tasks to assist users and maintain the Hamlet's operations. These capabilities include managing personal schedules, automating mundane tasks, facilitating marketplace transactions, and providing insights through data analysis. Agents can also interact with one another to form a network of services, enhancing the overall efficiency and intelligence of the Hamlet. Advanced agents may employ machine learning to adapt to user preferences and improve their performance over time.
