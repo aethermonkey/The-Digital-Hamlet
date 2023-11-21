@@ -43,11 +43,13 @@ To ensure a consistent and autonomous interaction model within the Digital Hamle
   - `ratification`: Handles the voting and consensus mechanisms for changes.
 
 Data Validation Rules:
+
 - All entries must be signed by the agent's key associated with the action.
 - User profiles and agent keys must be unique and verifiable.
 - Governance proposals require a quorum and majority approval to pass.
 
 Consensus Protocols:
+
 - Ratification of constitutional amendments follows a multi-round voting process with a supermajority threshold.
 - Transaction validation involves a double-entry check to ensure balance consistency.
 - Dispute resolutions are subject to peer review by randomly selected and anonymized agents within the Hamlet.
