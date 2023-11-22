@@ -4,7 +4,7 @@
 
 **The Digital Hamlet** represents a dream future, where The Sovereign User (you) presides over a community of AI agents, all driven to work towards satisfying the Sovereigns needs, as outlined in the evolving document, the **VeritasSuprema** (constition). This is an open source project, and I welcome any contributions. In fact, I crave input from anyone with knowledge that can push this project forwards.
 
-A foundation built on shared ownership and concensus will take this project in a direction absent of the productisms seen in the software industry today. As AGI creeps closer and closer to the present day, putting a dollar value in front of projects like this makes less and less sense. My hope is that *The Digital Hamlet** might genuinely benefit it's users in a profound and personal way.
+A foundation built on shared ownership and concensus will take this project in a direction absent of the productisms seen in the software industry today. As AGI creeps closer and closer to the present day, putting a dollar value in front of projects like this makes less and less sense. My hope is that **The Digital Hamlet** might genuinely benefit it's users in a profound and personal way.
 
 ## Current State
 
