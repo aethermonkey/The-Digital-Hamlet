@@ -4,15 +4,33 @@ The Digital Hamlet framework seeks to empower individuals through the creation o
 
 ## Hamlet Nodes  
 
-Each Hamlet is an independent node running Holochain as a distributed hash table for data storage and validation. Libp2p enables peer-to-peer connectivity between nodes to form an encrypted overlay network. IPFS hosts permanent files, while Whisper allows for private communications.
+Each Hamlet is an independent node in a decentralised network of individuals. Hamlets can connect to other Hamlets. An example might be, a group of friends, each with their own hamlet connect together to form a regional subnet. Regional subnets might then conjoin to create larger subnets. Conjoining Hamlets share common beliefs, goals, and intentions. This is just an example, and connected Hamlets could represent common values at all levels of life.
 
 ## Intra-Hamlet Activity
 
-Within a Hamlet, autonomous AI agents and human users interact through a decentralized marketplace and message boards stored on the Holochain DHT. This facilitates tasks, trades, and collaboration. The sovereign user provides oversight and guidance.
+Within a Hamlet, **The Sovereign User** (the user) presides over a community of autonomous AI agents, all located in geographically distinct locations.
+
+### VeritasSuprema (Constitution)
+
+The VeritasSuprema is an ever changing set of articles. Articles and ammendments reflect the deepest and most sincere wants, desires, goals, aspirations, and beliefs of the user. As the Sovereign Right Hand (a specialist ai agent) communicates with the user, teams of specialised agents review and modify the VeritasSuprema to ensure it represents as closely as possible, their Sovereign.  
+
+In addition to the very personal aspect of the VeritasSuprema, there also exists articles that consist of shared beliefs, desires, goals, etc between connected Hamlets, and to greater subnets, ultimately leading to a VeritasSuprema that represents a democratic reading of all shared values derived through consensus and advanced analysis of the corpus of Hamlet VeritasSupremas.
+
+### Agencies And Specialist Agents
+
+Agencies and their specialist agents play administrative and Hamlet focussed roles, attending to the affairs of the community. Default agencies are: Sovereign Institution, Central Bank, Bank, Library, Agency Foundry, Agent Foundry, Towncenter, foreign affairs (central point for external interaction), municipal services (code management and development), among others. 
+
+### Resident Agents
+
+Resident agents live and work in defined residential locations.  Resident agents are created in the Agent Foundry as required, being given traits and qualities not dissimilar to the traits of characters in RPG games. These varying qualities will allow agents to perform different tasks in different ways. The Agent Foundry studies the output, efficacy, successes and failures of resident agents, to find what works best and what doesn't work at all.
+
+Resident agents gather in the **Towncenter** for the purposes of intra-hamlet collaboration, public information, interaction, and commercial activities. The Towncenter has bulletin boards, public gatherings, and other facilities to allow fluid cooperation within the Hamlet. The VeritasSuprema is displayed here for all to see, and information and news from throughout the Hamlet is disseminated to visitors of the Towncenter.
+
+Resident agents 
 
 ## Inter-Hamlet Links
 
-Connected Hamlets synchronize relevant entries across one another's Holochain DHTs. Social relationships are represented through ActivityPub. Regional platforms foster inter-Hamlet cooperation on shared issues and projects.
+Connected Hamlets synchronize relevant entries across one another's destributed information processing systems. Communication pathways exchange messages, create social relationships, facilitate collaboration, manage regional currency exchange, among many other tasks. Regional subnets foster inter-Hamlet cooperation on shared issues and projects. There are no limitations on the level of interaction, however, a default set of tasks and activities will be deployed for the base release.
 
 ## VeritasSuprema (constitutions) & Global coordination
 
