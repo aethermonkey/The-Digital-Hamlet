@@ -1,8 +1,8 @@
 
 # Core architectures
 
-[!NOTE]
-After some research, it appears that **The Digital Hamlet** could mostly be built on the Holochain ecosystem. The other architectures below will not likely be required.  I have left them in just so as to not lose anything I might still need.
+>[!NOTE]
+>After some research, it appears that **The Digital Hamlet** could mostly be built on the Holochain ecosystem. The other architectures below will not likely be required.  I have left them in just so as to not lose anything I might still need.
 
 ## Holochain
 
