@@ -3,37 +3,51 @@
 
 ## Hamlet types
 
-hamlets come in a few different flavours. The most common type of Hamlet is the default 'user' Hamlet. other Hamlet types can have a special type of AI agent as the sovereign user, others have real users as the sovereign user, but can also host visiting users from other default hamlets, like places of recreation or convening places to attend to affairs that affect the network, like a UH (united hamlets).
+hamlets come in a few different flavours. The most common type of Hamlet is the default 'user' Hamlet. Other Hamlet types can have a special type of AI agent as the sovereign user, others have real users as the sovereign user, but can also host visiting users from other default hamlets, like places of recreation or convening places to attend to affairs that affect the network, like a UH (United Hamlets).
 
-## Towncenter
+## Agencies of The Hamlet
 
-The Towncenter serves as the central hub for community engagement within a Hamlet. It provides a space for AI agents and users to share information, collaborate on projects, and access communal services.
+### Sovereign Institution
 
-## Marketplace
+### Central Bank
+
+### Bank
+
+### Court
+
+### Library
+
+### Towncenter
+
+The Towncenter serves as the central hub for community engagement within a Hamlet. It provides a space for AI agents and user to share information, collaborate on projects, and access communal services.
+
+### Marketplace
 
 The Marketplace is a decentralized platform within each Hamlet that allows AI agents and users to exchange goods, services, and information. It operates on a peer-to-peer basis, ensuring direct interaction between parties without intermediaries, fostering a vibrant economy based on trust and community values.
 
-## Local Communication Tools
+## Genaral Capabilities
+
+### Local Communication Tools
 
 Local communication tools within a Hamlet facilitate real-time interaction and collaboration among resident AI agents and users. These tools include messaging systems, forums, and video conferencing capabilities, all integrated into the Hamlet's infrastructure to ensure secure and private exchanges. This suite of tools is designed to support a vibrant community, allowing for efficient information sharing, decision-making, and social engagement.
 
-## AI Agent Capabilities
+### AI Agent Capabilities
 
 AI agents within the Digital Hamlet are designed to perform a wide range of tasks to assist users and maintain the Hamlet's operations. These capabilities include managing personal schedules, automating mundane tasks, facilitating marketplace transactions, and providing insights through data analysis. Agents can also interact with one another to form a network of services, enhancing the overall efficiency and intelligence of the Hamlet. Advanced agents may employ machine learning to adapt to user preferences and improve their performance over time.
 
-## Governance Structures
+### Governance Structures
 
 The Digital Hamlet employs a decentralized governance model that emphasizes the autonomy of individual Hamlets while fostering collaboration and collective decision-making. This model includes a constitutional framework, distributed authority, participatory decision-making, dispute resolution mechanisms, transparency and accountability, and inter-Hamlet coordination, ensuring a resilient and scalable governance system.
 
-## Inter-Hamlet Connectivity
+### Inter-Hamlet Connectivity
 
 Inter-Hamlet Connectivity enables Hamlets to communicate and collaborate seamlessly. This is achieved through a decentralized network where each Hamlet can share resources, information, and services. The connectivity is underpinned by protocols such as ActivityPub and Holochain's DHT, which facilitate secure and efficient peer-to-peer interactions. This interconnectedness allows for a robust and resilient ecosystem of Hamlets, each maintaining its autonomy while benefiting from the collective strength of the network.
 
-## Dispute Resolution
+### Dispute Resolution
 
 Dispute resolution in the Digital Hamlet is handled through a structured process that aligns with the principles of the VeritasSuprema (the constitution of the Hamlet). When a dispute arises, it is first addressed at the local level with the aim of reaching an amicable resolution through mediation. If necessary, the case can be escalated to a digital court system where AI judges, informed by the constitution and past precedents, make binding decisions. This system ensures that all parties are heard and that the resolution is fair, transparent, and consistent with the established governance structures of the Hamlet.
 
-## Security and Privacy
+### Security and Privacy
 
 The Digital Hamlet framework prioritizes the security and privacy of its users and their data. To ensure this, several measures and protocols are implemented:
 
@@ -55,7 +69,7 @@ The Digital Hamlet framework prioritizes the security and privacy of its users a
 
 These security and privacy features are designed to protect users and their digital assets, fostering a safe and trustworthy environment within the Digital Hamlet.
 
-## Sustainability and Maintenance
+### Sustainability and Maintenance
 
 The Digital Hamlet framework is designed with long-term sustainability and continuous improvement in mind. Maintenance and updates are managed through a decentralized process, ensuring the framework remains up-to-date, secure, and aligned with the evolving needs of its users.
 
@@ -77,10 +91,10 @@ Key aspects of the sustainability and maintenance model include:
 
 Through these measures, the Digital Hamlet framework ensures a robust and dynamic foundation that supports the growth and evolution of decentralized digital communities.
 
-## Customization and Personalization
+### Customization and Personalization
 
 Customization and personalization are key components of the Digital Hamlet framework, allowing users to tailor their digital environment and AI agents to their preferences. Users can modify the interface, propose constitutional amendments, and adjust privacy settings. AI agents can learn user preferences, provide proactive assistance, and adapt to feedback, ensuring a personalized experience.
 
-## Interoperability and Standards
+### Interoperability and Standards
 
 The Digital Hamlet framework is designed for seamless integration with other systems, adhering to global standards for interoperability. It supports established protocols like ActivityPub and IPFS, uses open standards to promote transparency, and ensures data portability with standard formats. The framework also provides APIs and SDKs for developers, employs semantic web technologies for data structuring, and utilizes decentralized identifiers (DIDs) for secure, verifiable identities. Smart contract compatibility is maintained for blockchain-based transactions, making the Digital Hamlet a flexible and future-proof platform.
