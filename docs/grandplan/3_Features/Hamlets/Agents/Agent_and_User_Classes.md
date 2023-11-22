@@ -1,6 +1,6 @@
 # Agent and User Classes in Holochain
 
-In Holochain, both users and AI agents would have cryptographic identities. In the Holochain framework, every participant, whether a human user or an AI agent, is represented by an agent ID, which is derived from their cryptographic public key. This design ensures that every action taken on the network can be securely attributed to a specific entity, which is essential for maintaining data integrity and trust in a decentralized system.
+In Holochain, both users and AI agents have cryptographic identities. In the Holochain framework, every participant, whether a human user or an AI agent, is represented by an agent ID, which is derived from their cryptographic public key. This design ensures that every action taken on the network can be securely attributed to a specific entity, which is essential for maintaining data integrity and trust in a decentralized system.
 
 Here's a high-level overview of how you might structure your Holochain application to accommodate both human users and AI agents:
 
