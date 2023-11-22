@@ -5,21 +5,13 @@
 
 A Framework for distributed peer-to-peer applications and storing data hashes
 
-### libp2p
-
-Modular networking library for peer-to-peer connections
-
-### Whisper
-
-Secure communication protocol for private messaging
-
 ### ActivityPub
 
 Federated social networking standard
 
 ### Solidity
 
-Smart contract language (optional for additional consensus)
+Smart contract language for VeritasSuprema and other transactional activities.
 
 ### Languages
 
