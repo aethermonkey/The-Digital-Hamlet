@@ -16,7 +16,7 @@ The VeritasSuprema is an ever changing set of articles. Articles and ammendments
 
 In addition to the very personal aspect of the VeritasSuprema, there also exists articles that consist of shared beliefs, desires, goals, etc between connected Hamlets, and to greater subnets, ultimately leading to a VeritasSuprema that represents a democratic reading of all shared values derived through consensus and advanced analysis of the corpus of Hamlet VeritasSupremas.
 
-## VeritasSuprema & Global Coordination
+### VeritasSuprema & Global Coordination
 
 A DAG consensus system like IOTA ensures harmonization at an internet scale. Constitutional conventions bring representatives together to draft amendments vetted through localized ratification processes.
 
