@@ -6,7 +6,7 @@ The local systems within a Digital Hamlet are designed to operate independently 
 - **Local Database**: A combination of SQL and NoSQL databases to store and manage local data efficiently.
 - **Agent Foundry**: The development and maintenance hub for AI agents within the Hamlet.
 - **Geography**: A geographical framework that will be used to model the Hamlet. This will also contribute to a geographical representation of connected hamlets and presumably the whole world wide network of hamlets.
-- **Agency schema**: the basis of default local agencies and the abstract class for the creation of new agencies as required.
+- **Agency Foundry**: the basis of default local agencies and the abstract class for the creation of new agencies as required.
 
 # External Systems
 
