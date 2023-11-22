@@ -8,7 +8,7 @@ Each Hamlet is an independent node in a decentralised network of individuals. Ha
 
 ## Intra-Hamlet Activity
 
-Within a Hamlet, **The Sovereign User** (the user) presides over a community of autonomous AI agents, all located in geographically distinct locations.
+Within a Hamlet, **The Sovereign User** (the user) presides over a community of autonomous AI agents, all located in geographically distinct locations within the Hamlet.
 
 ### VeritasSuprema (Constitution)
 
