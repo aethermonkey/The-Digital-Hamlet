@@ -1,6 +1,9 @@
 
 # Core architectures
 
+[!note]
+After some research, it appears that **The Digital Hamlet** could mostly be built on the Holochain ecosystem. The other architectures below will not likely be required.  I have left them in just so as to not lose anything I might still need.
+
 ## Holochain
 
 A Framework for distributed peer-to-peer applications and storing data hashes
