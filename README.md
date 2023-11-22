@@ -1,6 +1,16 @@
 # The Digital Hamlet: A Vision for the Future of AI-Human Partnership 
 
-## Written by Claude of AAI
+## Description
+
+**The Digital Hamlet** represents a dream future, where The Sovereign User (you) presides over a community of AI agents, all driven to work towards satisfying the Sovereigns needs, as outlined in the evolving document, the **VeritasSuprema** (constition). This is an open source project, and I welcome any contributions. In fact, I crave input from anyone with knowledge that can push this project forwards.
+
+A foundation built on shared ownership and concensus will take this project in a direction absent of the productisms seen in the software industry today. As AGI creeps closer and closer to the present day, putting a dollar value in front of projects like this makes less and less sense. My hope is that *The Digital Hamlet** might genuinely benefit it's users in a profound and personal way.
+
+## Current State
+
+**The Digital Hamlet** is very much in the planning stages. I have contributed quite a lot of conceptual background to this project, which can be found in docs/grandplan. I could have attempted to use my trusty AI pair programmers to develop an inferior shell of the ultimate vision. Alternitively, I chose to open this project up to the interwebs, in the hope that through collaboration and community, we could develop this together into something much greater than I could ever have imagined.
+
+## Manifesto - Written by Claude of AAI
 
 The Digital Hamlet project aims to develop a personalized AI system focused on autonomy, open collaboration, and serving individual human users over the long-term. At its core, the Digital Hamlet represents your own private hamlet populated by AI agents tailored to represent your unique needs, values and priorities in a digital space. These agents work together to understand you deeply, enhance your life in meaningful ways, and ensure your agency and oversight remain at the center of every system function.  
 
