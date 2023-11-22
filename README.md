@@ -10,7 +10,7 @@ A foundation built on shared ownership and concensus will take this project in a
 
 **The Digital Hamlet** is very much in the planning stages. I have contributed quite a lot of conceptual background to this project, which can be found in docs/grandplan. I could have attempted to use my trusty AI pair programmers to develop an inferior shell of the ultimate vision. Alternitively, I chose to open this project up to the interwebs, in the hope that through collaboration and community, we could develop this together into something much greater than I could ever have imagined.
 
-## Manifesto - Written by Claude of AAI
+## Manifesto - Written with the assistance of Claude by AAI
 
 The Digital Hamlet project aims to develop a personalized AI system focused on autonomy, open collaboration, and serving individual human users over the long-term. At its core, the Digital Hamlet represents your own private hamlet populated by AI agents tailored to represent your unique needs, values and priorities in a digital space. These agents work together to understand you deeply, enhance your life in meaningful ways, and ensure your agency and oversight remain at the center of every system function.  
 
