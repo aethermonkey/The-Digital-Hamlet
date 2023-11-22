@@ -2,7 +2,7 @@
 
 ### Data storage:
 
-Holochain's distributed hash table stores data across nodes
+Local SQL and VectorDB storages bridging to Holochain's distributed hash table for permitted data across nodes
 
 ### Messaging: 
 
@@ -14,11 +14,11 @@ Built as Holochain applications using languages like Rust
 
 ### Identity: 
 
-Nodes have cryptographic identities provided by Holochain
+Nodes have cryptographic identities provided by Holochain. user / agents also have unique cryptographic identities to ensure standardised identity in and out of the Hamlet.
 
 ### File Storage: 
 
-IPFS could provide distribution, but may not be required locally
+IPFS could provide distribution, but local data storage system to ensure privacy of Hamlet stores.
 
 ### External Connectivity:
 
