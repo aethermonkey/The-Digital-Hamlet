@@ -17,7 +17,11 @@ The local systems within a Digital Hamlet are designed to operate independently 
 
 External systems facilitate interaction with the broader network of Hamlets and other external services. Key components include:
 
-- **ActivityPub**: For social networking and communication between Hamlets.
+>[!NOTE]
+>As mentioned in Architecture.md, it appears that Holochain will satisfy much of the requiremments of the project. At any cost ActivityPub will be redundant unless the chosen solution for a social platform also complies to ActivityPub protocol.
+
+- **Flux / AD4M**: Flux is a social networking platform build on top off AD4M
+-- **ActivityPub**: For social networking and communication between Hamlets. As per note, Activity
 - **IPFS**: For distributed file storage and sharing across the network.
 - **Digital Currency Protocols**: Standards like ERC-20 and ERC-721 for token interoperability and transactions.
 
