@@ -10,6 +10,9 @@ For distributed data storage and peer-to-peer application logic.
 
 ### Local Database
 
+>[!NOTE]
+>It appears there are private  data solutions within the ccontext Holochain DHTs
+
 A combination of SQL and NoSQL databases to store and manage local data efficiently.
 
 ### Agent Foundry
