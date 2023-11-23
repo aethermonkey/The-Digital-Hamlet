@@ -12,6 +12,7 @@ The local systems within a Digital Hamlet are designed to operate independently 
 -- An agency that provides high-level management and governance over the hamlet. It contains the VeritasSuprema and AI agents that can interact with the sovereign user by default.
 -- ## Central bank
 -- Manages local and foreign currency. Issues currency to banks to loan out to resident agents to fulfil planned and approved projects. Also, manages inter-hamlet exchange and governance.
+-- 
 
 # External Systems
 
@@ -21,9 +22,9 @@ External systems facilitate interaction with the broader network of Hamlets and 
 >As mentioned in Architecture.md, it appears that Holochain will satisfy much of the requiremments of the project. At any cost ActivityPub will be redundant unless the chosen solution for a social platform also complies to ActivityPub protocol.
 
 - **Flux / AD4M**: Flux is a social networking platform build on top off AD4M
--- **ActivityPub**: For social networking and communication between Hamlets. As per note, ActivityPub is probably suplerfluous and there will be a holochain native solution
-
+  - **ActivityPub**: For social networking and communication between Hamlets. As per note, ActivityPub is probably suplerfluous and there will be a holochain native solution
 - **IPFS**: For distributed file storage and sharing across the network.
+  - An AD4M video showed how *languages* can bridge betwen things like IPFS
 - **Digital Currency Protocols**: Standards like ERC-20 and ERC-721 for token interoperability and transactions.
 
 # Bridging Systems
