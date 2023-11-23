@@ -2,11 +2,22 @@
 
 ### Sovereign Institution
 
+The Sovereign Institution acts as the central hub for manging the affairs of the **Sovereign User**. Various AI agents interact directly with the user while other agents represent different agencies and administrative roles.
+
 ### Central Bank
+
+The Central Bank issues local currency to Banks who conduct project activities resident agents. The Central Bank also manages economics relating to the cryptocurrency spread throughout the hamlets.
+
+>[!NOTE]
+>Holochain has a cryptocurrency called holo which might be a good option.
 
 ### Bank
 
+The Bank issues credit to resident agents after approving projectss. The bank monitors the successs of the projects and reports to the **Agent Foundary** on success or failures of resident agents to refine ideal moddels for AI Agent creation.  
+
 ### Court
+
+The Court hears cases where the VeritasSuprema may have been contravened. Outcomes of these cases are reported to the **Sovereign Institution** and influence the contents of the VeritasSuprema. 
 
 ### Library
 

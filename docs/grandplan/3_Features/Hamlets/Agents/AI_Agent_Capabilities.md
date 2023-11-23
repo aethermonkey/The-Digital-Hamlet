@@ -6,6 +6,7 @@ AI agents within the Digital Hamlet are designed to perform a wide range of task
 
 Civic Agents are responsible for managing and maintaining core services within the Hamlet. They are akin to the public service agencies in a traditional government and are divided into different agencies, each with a specific focus area. For example:
 
+- **Sovereign Institution**: Attend to the affairs of governing the Hamlet.
 - **Library Agency:** Manages the storage and retrieval of knowledge within the Hamlet.
 - **Judicial Agency:** Oversees the dispute resolution process and maintains the rule of law according to the Hamlet's constitution.
 - **Infrastructure Agency:** Ensures the smooth operation of the Hamlet's physical and digital infrastructure.
