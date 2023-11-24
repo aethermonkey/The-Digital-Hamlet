@@ -23,20 +23,24 @@ The development and maintenance hub for AI agents within the Hamlet.
 
 A geographical framework that will be used to model the Hamlet. This will also contribute to a geographical representation of connected hamlets and presumably the whole world wide network of hamlets.
 
-### Agency Foundry
+### Default Agencies 
+
+#### Agency Foundry
 
 The basis of default local agencies and the abstract class for the creation of new agencies as required.
 
-#### Default Agencies 
-
-##### Sovereign Institution
+#### Sovereign Institution
 
 An agency that provides high-level management and governance over the hamlet. It contains the VeritasSuprema and AI agents that can interact with the sovereign user by default.
 
-##### Central bank
+#### Central bank
 
 Manages local and foreign currency. Issues currency to banks to loan out to resident agents to fulfil planned and approved projects. Also, manages inter-hamlet exchange and governance.
- 
+
+#### Agent Foundry
+
+The Agent Foundry is the cornerstone of the Digital Hamlet's development, responsible for creating and refining AI agents. It is the first system to be developed, setting the foundation for the Hamlet's growth and evolution.
+
 ## External Systems
 
 External systems facilitate interaction with the broader network of Hamlets and other external services. Key components include:
@@ -54,6 +58,3 @@ External systems facilitate interaction with the broader network of Hamlets and 
 
 Bridging systems ensure seamless integration and communication between the local and external systems, maintaining the autonomy of the Hamlet while enabling collaboration and interoperability.
 
-# Agent Foundry
-
-The Agent Foundry is the cornerstone of the Digital Hamlet's development, responsible for creating and refining AI agents. It is the first system to be developed, setting the foundation for the Hamlet's growth and evolution.

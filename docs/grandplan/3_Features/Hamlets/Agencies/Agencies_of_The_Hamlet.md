@@ -6,7 +6,7 @@ The Sovereign Institution acts as the central hub for manging the affairs of the
 
 ### Central Bank
 
-The Central Bank issues local currency to Banks who conduct project activities resident agents. The Central Bank also manages economics relating to the cryptocurrency spread throughout the hamlets.
+The Central Bank issues local currency to **Banks** who conduct transactions with **resident agent** **projects**. The Central Bank also regulates and manages economic activity relating to the cryptocurrency spread throughout the system. The **Central Bank** plays a key role in ensuring the stability of the local economy, providing insulation from other **Hamlets**, facilitating autonomy and self-determination of the community.
 
 >[!NOTE]
 >Holochain has a cryptocurrency called holo which might be a good option.

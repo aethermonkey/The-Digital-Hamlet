@@ -13,6 +13,8 @@ Hamlets come in a few different flavours. The most common type of Hamlet is the 
 - **[Library](Hamlets/Agencies/Library.md)**: The Library stores data in databases, DHTs and other storage mediums. The library also retrieves information when requested.
 - **[Towncenter](Hamlets/Agencies/Towncenter.md)**: The Towncenter is the central hub for community engagement within a Hamlet.
 - **[Marketplace](Hamlets/Agencies/Marketplace.md)**: The Marketplace is a decentralized platform within each Hamlet that facilitates trade within the Hamlet and outward to other Hamlets.
+- **[Agency Foundary](Hamlets/Agencies/Agency_Foundary.md)**: The Agency Foundary is the foundation of the Digital Hamlet.
+- **[Agent Foundary](Hamlets/Agencies/Agent_Foundary.md)**: The Agent Foundary is the foundation of the Digital Hamlet.
 
 ## Genaral Capabilities
 
